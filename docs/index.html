@@ -392,8 +392,31 @@ function startExam() {
     document.getElementById('page-exam').classList.remove('hidden');
     document.getElementById('page-results').classList.add('hidden');
     document.getElementById('exam-info').textContent = name + ' · ' + company;
+
+    // Anti-share: disable right-click + text selection
+    document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+    document.body.style.userSelect = 'none';
+
+    // Anti-share: floating watermark with candidate identity
+    var wm = document.createElement('div');
+    wm.id = 'watermark';
+    wm.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:999;opacity:0.05;font-size:16px;font-weight:700;color:#000;overflow:hidden;';
+    var wmText = name + ' | ' + company + ' | ' + project + ' | ' + new Date().toLocaleString();
+    var wmHtml = '';
+    for (var r = 0; r < 9; r++) { for (var c = 0; c < 3; c++) { wmHtml += '<div style="position:absolute;top:'+(r*12)+'%;left:'+(c*36)+'%;transform:rotate(-20deg);white-space:nowrap;">'+wmText+'</div>'; } }
+    wm.innerHTML = wmHtml;
+    document.body.appendChild(wm);
+
     document.getElementById('btn-submit').disabled = false;
     renderQuestions(); renderQuestionNav(); startTimer(1500); window.scrollTo(0,0);
+}
+
+// Cleanup watermark on submit
+function removeWatermark() {
+    var wm = document.getElementById('watermark');
+    if (wm) wm.remove();
+    document.body.style.userSelect = '';
+    document.removeEventListener('contextmenu', function(e) { e.preventDefault(); });
 }
 
 function startTimer(sec) {
@@ -497,6 +520,7 @@ function submitExam() {
 
     clearInterval(timerInterval);
     document.removeEventListener('visibilitychange', window._cheatHandler);
+    removeWatermark();
     window._examActive = false;
     document.getElementById('btn-submit').disabled = true;
 
@@ -589,6 +613,7 @@ function getFeedback(score, details) {
 }
 
 function goHome() {
+    removeWatermark();
     document.getElementById('page-results').classList.add('hidden');
     document.getElementById('page-exam').classList.add('hidden');
     document.getElementById('page-register').classList.remove('hidden');
