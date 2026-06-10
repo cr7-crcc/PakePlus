@@ -1,0 +1,14 @@
+{
+  "name": "CRCCRE质量管控标准化考试",
+  "short_name": "CRCCRE考试",
+  "description": "质量管控标准化在线考试系统",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F2F2F7",
+  "theme_color": "#007AFF",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
