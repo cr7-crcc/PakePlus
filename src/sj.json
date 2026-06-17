@@ -1,0 +1,5793 @@
+{
+  "projects": [
+    {
+      "id": "proj_1779175008858",
+      "name": "嘉兴百花",
+      "company": "创新",
+      "area": "252590.24",
+      "engineer": "张思茂",
+      "type": "合作",
+      "partner": "嘉兴市嘉城城市更新建设有限公司",
+      "shareRatio": "55",
+      "lines": "全条线",
+      "phases": [
+        {
+          "id": "phase_1779175023345_rl2pk",
+          "name": "南区",
+          "area": "103088.22",
+          "status": "集中交付期内",
+          "contractor": "中铁城建集团有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 723,
+          "completionDate": "2026-01-27",
+          "deliveryDate": "2026-01-30",
+          "contractDeliveryDate": "2026-01-30",
+          "inspectionStartDate": "2025-10-10",
+          "openDayPlanDate": "2025-12-01",
+          "jointAssessmentPlanDate": "2025-12-24",
+          "deliveryScope": "4-8#楼",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "已开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "已开展",
+            "actualDate": "2025-12-01",
+            "guests": 263,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "已开展",
+            "actualDate": "2025-12-24",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "截止4月30日，应交付224户，实交付212户，户均问题0.69条",
+            "indicator2": "截止4月30日，项目整体渗漏点9个，万平面渗漏点0.87个",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/28 13:49:34",
+          "lastUpdateUser": "用户"
+        },
+        {
+          "id": "phase_1779175165016_k85d4",
+          "name": "北区",
+          "area": "149502. 02",
+          "status": "停工",
+          "contractor": "中铁十二局集团有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 824,
+          "completionDate": "2028-06-30",
+          "deliveryDate": "2028-07-19",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "2028-03-01",
+          "openDayPlanDate": "2028-05-30",
+          "jointAssessmentPlanDate": "2028-06-20",
+          "deliveryScope": "全标段",
+          "progress": {
+            "indoor": 10,
+            "public": 0,
+            "facade": 5,
+            "outdoor": 10,
+            "basement": 20,
+            "slowBuildingNo": "",
+            "slowProgress": {
+              "砼": 0,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2028-05-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2028-06-20",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/28 11:33:19",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779673394545",
+      "name": "台州海怡云府",
+      "company": "创新",
+      "area": "16.7",
+      "engineer": "石可浩",
+      "type": "操盘",
+      "landDate": "2022-09-30",
+      "openDate": "2023-12-16",
+      "phases": [
+        {
+          "id": "phase_1779673285045_4hute",
+          "name": "1期",
+          "area": "16.7",
+          "status": "集中交付期内",
+          "contractor": "中铁十八局集团第四工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 940,
+          "completionDate": "2025-12-30",
+          "deliveryDate": "2025-12-31",
+          "contractDeliveryDate": "2025-12-31",
+          "inspectionStartDate": "2025-09-22",
+          "openDayPlanDate": "2025-11-23",
+          "jointAssessmentPlanDate": "2025-12-17",
+          "deliveryScope": "1-11#",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2025-11-23",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2025-12-17",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "截止2026年5月20日，应交付479户，实际交付444户，户均问题0.97条",
+            "indicator2": "截止2026年5月20日，项目整体渗漏点5个，万平米渗漏点0.3个",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/28 11:35:23",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779175627383",
+      "name": "金华-滨悦华府",
+      "company": "创新",
+      "area": "56.94",
+      "engineer": "金校晶",
+      "type": "操盘",
+      "landDate": "2021-11-01",
+      "openDate": "2025-01-13",
+      "phases": [
+        {
+          "id": "phase_1779176395526_toftm",
+          "name": "二标段",
+          "area": "20.41",
+          "status": "停工",
+          "contractor": "中铁十六局集团有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 1554,
+          "completionDate": "2027-04-30",
+          "deliveryDate": "2027-05-30",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "2027-03-25",
+          "openDayPlanDate": "2027-04-25",
+          "jointAssessmentPlanDate": "2027-05-10",
+          "deliveryScope": "包含人才房和安置房，其中安置房601户已交付",
+          "progress": {
+            "indoor": 80,
+            "public": 5,
+            "facade": 93,
+            "outdoor": 70,
+            "basement": 70,
+            "slowBuildingNo": "19#",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 3,
+              "部品": 0,
+              "保温": 85,
+              "外墙涂料": 84.9
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2027-04-25",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2027-05-10",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/28 11:43:33",
+          "lastUpdateUser": "金校晶"
+        },
+        {
+          "id": "phase_1779181046455_zcmzh",
+          "name": "一标段",
+          "area": "17.91",
+          "status": "停工",
+          "contractor": "中铁十二局建筑安装工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 1538,
+          "completionDate": "",
+          "deliveryDate": "",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "包含人才房和安置房，其中安置房475户已交付",
+          "progress": {
+            "indoor": 80,
+            "public": 5,
+            "facade": 90,
+            "outdoor": 65,
+            "basement": 70,
+            "slowBuildingNo": "21#",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 0,
+              "部品": 0,
+              "保温": 85,
+              "外墙涂料": 85
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/28 11:42:24",
+          "lastUpdateUser": "金校晶"
+        },
+        {
+          "id": "phase_1779181147359_09lzi",
+          "name": "三标段",
+          "area": "18.58",
+          "status": "停工",
+          "contractor": "中铁城建集团第一工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 697,
+          "completionDate": "",
+          "deliveryDate": "",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "",
+          "progress": {
+            "indoor": 60,
+            "public": 0,
+            "facade": 75,
+            "outdoor": 0,
+            "basement": 30,
+            "slowBuildingNo": "文体中心",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/28 11:44:47",
+          "lastUpdateUser": "金校晶"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779258998635",
+      "name": "黄岩东浦未来社区",
+      "company": "创新",
+      "area": "646573.21 ",
+      "engineer": "李明银",
+      "type": "操盘",
+      "landDate": "2022-04-21",
+      "openDate": "",
+      "phases": [
+        {
+          "id": "phase_1779258548691_tgnvv",
+          "name": "三标段",
+          "area": "203434.4",
+          "status": "竣备待交付",
+          "contractor": "中铁二十三局集团有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 1230,
+          "completionDate": "2026-01-06",
+          "deliveryDate": "",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "03地块与06地块",
+          "progress": {
+            "indoor": 100,
+            "public": 100,
+            "facade": 100,
+            "outdoor": 100,
+            "basement": 100,
+            "slowBuildingNo": "",
+            "slowProgress": {
+              "砼": 0,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/28 11:36:08",
+          "lastUpdateUser": "用户"
+        },
+        {
+          "id": "phase_1779258655868_bnxzq",
+          "name": "二标段",
+          "area": "204682.48",
+          "status": "停工",
+          "contractor": "中铁十二局集团建筑安装工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 912,
+          "completionDate": "",
+          "deliveryDate": "",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "05地块",
+          "progress": {
+            "indoor": 10,
+            "public": 10,
+            "facade": 10,
+            "outdoor": 10,
+            "basement": 40,
+            "slowBuildingNo": "3",
+            "slowProgress": {
+              "砼": 25,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/28 13:48:53",
+          "lastUpdateUser": "用户"
+        },
+        {
+          "id": "phase_1779258917131_gye9m",
+          "name": "一标段",
+          "area": "238456.33",
+          "status": "停工",
+          "contractor": "中铁十一局集团建筑安装工程有限公司",
+          "deliveryStandard": "毛坯+精装",
+          "deliveryHouseholds": 384,
+          "completionDate": "",
+          "deliveryDate": "",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "02地块与04地块",
+          "progress": {
+            "indoor": 60,
+            "public": 60,
+            "facade": 98,
+            "outdoor": 100,
+            "basement": 70,
+            "slowBuildingNo": "",
+            "slowProgress": {
+              "砼": 0,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/28 13:47:10",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779690237050",
+      "name": "宁波·望澜府",
+      "company": "创新",
+      "area": "12.27",
+      "engineer": "郭海军",
+      "type": "操盘",
+      "landDate": "2023-06-28",
+      "openDate": "2025-03-10",
+      "phases": [
+        {
+          "id": "phase_1779689174113_4qtzy",
+          "name": "一标段",
+          "area": "12.27",
+          "status": "在建",
+          "contractor": "中铁建设集团宁波建设有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 740,
+          "completionDate": "2026-10-31",
+          "deliveryDate": "2026-12-30",
+          "contractDeliveryDate": "2026-12-30",
+          "inspectionStartDate": "2026-09-30",
+          "openDayPlanDate": "2026-07-20",
+          "jointAssessmentPlanDate": "2026-12-05",
+          "deliveryScope": "",
+          "progress": {
+            "indoor": 70,
+            "public": 70,
+            "facade": 97,
+            "outdoor": 70,
+            "basement": 95,
+            "slowBuildingNo": "5",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 65,
+              "部品": 5,
+              "保温": 100,
+              "外墙涂料": 97
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-05",
+              "checkType": "质检小组月检",
+              "checkDate": "2026-05-27",
+              "score": 92.9,
+              "files": [
+                {
+                  "name": "TJDC-CXFZ-GC-008_宁波长乐项目质量检查通知单_2026-05-27.pdf",
+                  "type": "application/pdf",
+                  "data": "[已清理]",
+                  "size": 6335197
+                }
+              ]
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-07-20",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-12-05",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/28 17:27:25",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779675786854",
+      "name": "浙江.丽水南城SG-01地块(丽水绿谷未来社区)项目",
+      "company": "创新",
+      "area": "400987.69",
+      "engineer": "杨帆",
+      "type": "操盘",
+      "landDate": "2022-11-22",
+      "openDate": "2026-06-25",
+      "phases": [
+        {
+          "id": "phase_1779673451793_of01d",
+          "name": "丽水南城SG-01地块(丽水绿谷未来社区)项目北区",
+          "area": "150276.21",
+          "status": "在建",
+          "contractor": "中铁十一局集团建筑安装工程有限公司、中铁十二局集团建筑安装工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 1387,
+          "completionDate": "2026-06-30",
+          "deliveryDate": "2026-07-11",
+          "contractDeliveryDate": "2026-07-11",
+          "inspectionStartDate": "2026-06-25",
+          "openDayPlanDate": "2026-06-25",
+          "jointAssessmentPlanDate": "2026-06-25",
+          "deliveryScope": "水阁综合楼、净菜市场、商品房6#8#9#10#楼、安置房14#~22#楼",
+          "progress": {
+            "indoor": 90,
+            "public": 90,
+            "facade": 90,
+            "outdoor": 85,
+            "basement": 95,
+            "slowBuildingNo": "6#",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 85,
+              "部品": 85,
+              "保温": 100,
+              "外墙涂料": 95
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-05",
+              "checkType": "质检小组季度",
+              "checkDate": "2026-05-26",
+              "score": 84,
+              "files": []
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-06-25",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-06-25",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/28 17:27:40",
+          "lastUpdateUser": "用户"
+        },
+        {
+          "id": "phase_1779673502348_rmgka",
+          "name": "丽水南城SG-01地块(丽水绿谷未来社区)项目南区",
+          "area": "92045.08",
+          "status": "停工",
+          "contractor": "中铁十一局集团建筑安装工程有限公司、中铁十二局集团建筑安装工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 697,
+          "completionDate": "2027-06-30",
+          "deliveryDate": "2027-07-11",
+          "contractDeliveryDate": "2027-07-11",
+          "inspectionStartDate": "2027-05-01",
+          "openDayPlanDate": "2027-06-25",
+          "jointAssessmentPlanDate": "2027-06-11",
+          "deliveryScope": "商品房1#2#3#4#5#7#楼，人才房11#12#13#楼",
+          "progress": {
+            "indoor": 10,
+            "public": 10,
+            "facade": 10,
+            "outdoor": 30,
+            "basement": 40,
+            "slowBuildingNo": "",
+            "slowProgress": {
+              "砼": 0,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2027-06-25",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2027-06-11",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/28 17:05:21",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779243270791",
+      "name": "天津国际城3C、5B地块",
+      "company": "华东",
+      "area": "",
+      "engineer": "刘建军",
+      "type": "操盘",
+      "landDate": "",
+      "openDate": "",
+      "phases": [
+        {
+          "id": "phase_1779243557545_zw668",
+          "name": "",
+          "area": "",
+          "status": "未开工",
+          "contractor": "",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 0,
+          "completionDate": "",
+          "deliveryDate": "",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "",
+          "lastUpdateUser": ""
+        }
+      ]
+    },
+    {
+      "id": "proj_1779176643368",
+      "name": "上海-西派云间",
+      "company": "华东",
+      "area": "15.08",
+      "engineer": "岳波",
+      "type": "操盘",
+      "landDate": "2025-05-09",
+      "openDate": "2025-10-12",
+      "phases": [
+        {
+          "id": "phase_1779175572264_52m7h",
+          "name": "一期",
+          "area": "15.08",
+          "status": "在建",
+          "contractor": "中铁建设集团有限公司",
+          "deliveryStandard": "毛坯+精装",
+          "deliveryHouseholds": 680,
+          "completionDate": "2027-09-30",
+          "deliveryDate": "2027-12-30",
+          "contractDeliveryDate": "2027-12-31",
+          "inspectionStartDate": "2027-04-30",
+          "openDayPlanDate": "2027-06-01",
+          "jointAssessmentPlanDate": "2027-12-01",
+          "deliveryScope": "1#-17#",
+          "progress": {
+            "indoor": 40,
+            "public": 40,
+            "facade": 40,
+            "outdoor": 20,
+            "basement": 20,
+            "slowBuildingNo": "16#（17F）",
+            "slowProgress": {
+              "砼": 0,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-01",
+              "checkType": "质检小组月检",
+              "checkDate": "2026-01-05",
+              "score": 80.9,
+              "files": [
+                {
+                  "name": "【西派云间项目】工程月度巡查报告（2026.1.5）.pdf",
+                  "type": "application/pdf",
+                  "data": "[已清理]",
+                  "size": 4103320
+                }
+              ]
+            },
+            {
+              "checkMonth": "2026-03",
+              "checkType": "质检小组月检",
+              "checkDate": "2026-03-30",
+              "score": 88.96,
+              "files": [
+                {
+                  "name": "【西派云间项目】工程季度检查报告（2026年3月）.pdf",
+                  "type": "application/pdf",
+                  "data": "[已清理]",
+                  "size": 5160578
+                }
+              ]
+            },
+            {
+              "checkMonth": "2026-04",
+              "checkType": "质检小组月检",
+              "checkDate": "2026-04-27",
+              "score": 91.43,
+              "files": [
+                {
+                  "name": "【西派云间项目】工程月度巡查报告（2026年4月27日）.pdf",
+                  "type": "application/pdf",
+                  "data": "[已清理]",
+                  "size": 3546015
+                }
+              ]
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2027-06-01",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2027-12-01",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/25 15:11:25",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779184485367",
+      "name": "合肥·花语江南",
+      "company": "华东",
+      "area": "20.45",
+      "engineer": "朱洪超",
+      "type": "合作",
+      "partner": "中铁城建集团",
+      "shareRatio": "90%",
+      "lines": "全条线操盘",
+      "phases": [
+        {
+          "id": "phase_1779184496546_f2ltk",
+          "name": "一期",
+          "area": "11.06",
+          "status": "已移交物业",
+          "contractor": "中铁城建集团第一工程有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 1185,
+          "completionDate": "2025-11-11",
+          "deliveryDate": "2025-12-25",
+          "contractDeliveryDate": "2025-12-31",
+          "inspectionStartDate": "2025-07-25",
+          "openDayPlanDate": "2025-11-30",
+          "jointAssessmentPlanDate": "2025-11-24",
+          "deliveryScope": "1-3#、5-10#楼",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "",
+          "lastUpdateUser": ""
+        },
+        {
+          "id": "phase_1779184606072_wswry",
+          "name": "二期",
+          "area": "9.4",
+          "status": "在建",
+          "contractor": "中铁城建集团第一工程有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 568,
+          "completionDate": "2026-12-30",
+          "deliveryDate": "2027-03-25",
+          "contractDeliveryDate": "2027-03-31",
+          "inspectionStartDate": "2026-07-30",
+          "openDayPlanDate": "2027-02-28",
+          "jointAssessmentPlanDate": "2027-01-30",
+          "deliveryScope": "12#、13#、15# 、16#、17#、18#、19#、20#楼",
+          "progress": {
+            "indoor": 45,
+            "public": 10,
+            "facade": 35,
+            "outdoor": 30,
+            "basement": 50,
+            "slowBuildingNo": "16#楼",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 30,
+              "部品": 0,
+              "保温": 100,
+              "外墙涂料": 50
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-04",
+              "checkType": "质检小组月检",
+              "checkDate": "2026-04-09",
+              "score": 97.78,
+              "files": [
+                {
+                  "name": "【花语江南项目】工程月度巡查报告（2026年4月8日）.pdf",
+                  "type": "application/pdf",
+                  "data": "[已清理]",
+                  "size": 4201663
+                }
+              ]
+            },
+            {
+              "checkMonth": "2026-05",
+              "checkType": "质检小组月检",
+              "checkDate": "2026-05-08",
+              "score": 95.71,
+              "files": [
+                {
+                  "name": "【花语江南项目】工程月度巡查报告（2026年5月8日）.pdf",
+                  "type": "application/pdf",
+                  "data": "[已清理]",
+                  "size": 5692961
+                }
+              ]
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-11-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-12-05",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/25 15:13:07",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779343327355",
+      "name": "上海熙语",
+      "company": "华东",
+      "area": "11.71",
+      "engineer": "朱国庆",
+      "type": "操盘",
+      "landDate": "2023-04-20",
+      "openDate": "2023-10-23",
+      "phases": [
+        {
+          "id": "phase_1779345182840_vupx3",
+          "name": "南区总包",
+          "area": "5.96",
+          "status": "已移交物业",
+          "contractor": "中铁二十局集团有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 335,
+          "completionDate": "2025-11-06",
+          "deliveryDate": "2025-11-26",
+          "contractDeliveryDate": "2025-12-31",
+          "inspectionStartDate": "2025-03-21",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "9#-22#",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 17:22:31",
+          "lastUpdateUser": "hu"
+        },
+        {
+          "id": "phase_1779345249651_l3gl7",
+          "name": "北区总包",
+          "area": "5.76",
+          "status": "已移交物业",
+          "contractor": "中铁二十四局集团有限公司",
+          "deliveryStandard": "毛坯+精装",
+          "deliveryHouseholds": 380,
+          "completionDate": "2025-11-06",
+          "deliveryDate": "2025-11-26",
+          "contractDeliveryDate": "2025-12-31",
+          "inspectionStartDate": "2025-03-21",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "1#-8#、23#-25#",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 17:22:33",
+          "lastUpdateUser": "hu"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779345666324",
+      "name": "上海·朗拾花语",
+      "company": "华东",
+      "area": "6.5",
+      "engineer": "李永超",
+      "type": "合作",
+      "partner": "万科",
+      "shareRatio": "49",
+      "lines": "营销、成本、工程、行政",
+      "phases": [
+        {
+          "id": "phase_1779345691480_qv6mm",
+          "name": "6-3地块",
+          "area": "2.2",
+          "status": "已移交物业",
+          "contractor": "中铁十二局集团建筑安装工程有限公司",
+          "deliveryStandard": "毛坯+精装",
+          "deliveryHouseholds": 510,
+          "completionDate": "2025-11-21",
+          "deliveryDate": "2025-12-25",
+          "contractDeliveryDate": "2025-12-31",
+          "inspectionStartDate": "2025-09-20",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "2025-11-05",
+          "deliveryScope": "8#楼、9#楼、10#楼、11#楼、12#楼、13#楼",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/22 11:09:19",
+          "lastUpdateUser": "zhangfei"
+        },
+        {
+          "id": "phase_1779346788676_3mlfy",
+          "name": "6-5地块",
+          "area": "1.9",
+          "status": "已移交物业",
+          "contractor": "中建三局第一建设工程有限责任公司",
+          "deliveryStandard": "毛坯+精装",
+          "deliveryHouseholds": 431,
+          "completionDate": "2025-11-21",
+          "deliveryDate": "2025-12-25",
+          "contractDeliveryDate": "2025-12-31",
+          "inspectionStartDate": "2025-09-20",
+          "openDayPlanDate": "2025-11-15",
+          "jointAssessmentPlanDate": "2025-11-05",
+          "deliveryScope": "14#楼、15#楼、16#楼、17#楼、18#楼、20#楼",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/22 11:09:23",
+          "lastUpdateUser": "zhangfei"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779608730218",
+      "name": "哈尔滨江语时代",
+      "company": "华东",
+      "area": "7.32",
+      "engineer": "赵玉",
+      "type": "操盘",
+      "landDate": "2021-08-04",
+      "openDate": "",
+      "phases": [
+        {
+          "id": "phase_1779608358956_9bfvs",
+          "name": "哈尔滨总部基地五期",
+          "area": "7.32",
+          "status": "停工",
+          "contractor": "中铁建设集团北京工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 518,
+          "completionDate": "2028-12-20",
+          "deliveryDate": "2028-12-30",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "2028-09-01",
+          "openDayPlanDate": "2028-11-30",
+          "jointAssessmentPlanDate": "2028-12-20",
+          "deliveryScope": "13#、14#、15#、16#、23#、24#、25#",
+          "progress": {
+            "indoor": 8,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 8,
+            "slowBuildingNo": "",
+            "slowProgress": {
+              "砼": 0,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2028-11-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2028-12-20",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/25 14:27:47",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779610118785",
+      "name": "苏州花语云萃",
+      "company": "华东",
+      "area": "46",
+      "engineer": "祝东风",
+      "type": "操盘",
+      "landDate": "2021-09-16",
+      "openDate": "2022-06-10",
+      "phases": [
+        {
+          "id": "phase_1779430889867_fy4jx",
+          "name": "三期",
+          "area": "16",
+          "status": "停工",
+          "contractor": "中铁建设集团有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 744,
+          "completionDate": "2029-10-28",
+          "deliveryDate": "2029-11-30",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "2029-05-20",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "2029-11-12",
+          "deliveryScope": "1#-3#、5#-8#、11#、27#配电房、1#配电房、1#开关站、2#配电房、3#配电房、4#配电房、3#垃圾房、1#门卫、部分地库",
+          "progress": {
+            "indoor": 30,
+            "public": 30,
+            "facade": 30,
+            "outdoor": 0,
+            "basement": 19.9,
+            "slowBuildingNo": "3#楼",
+            "slowProgress": {
+              "砼": 40,
+              "砌体": 10,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2029-11-12",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/25 09:11:44",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779282053483",
+      "name": "南京-凤樾府",
+      "company": "华东",
+      "area": "15.15",
+      "engineer": "吴磊",
+      "type": "代建",
+      "owner": "光大信托",
+      "landDate": "1996-05-02",
+      "bidDate": "2025-12-22",
+      "agentLines": "全部条线",
+      "brandOutput": "否",
+      "phases": [
+        {
+          "id": "phase_1779329631860_8zgs1",
+          "name": "标段1",
+          "area": "15.15",
+          "status": "在建",
+          "contractor": "南京国忠建筑工程有限公司",
+          "deliveryStandard": "毛坯+精装",
+          "deliveryHouseholds": 411,
+          "completionDate": "2028-06-25",
+          "deliveryDate": "2028-06-30",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "2028-05-31",
+          "openDayPlanDate": "2028-05-31",
+          "jointAssessmentPlanDate": "2028-06-01",
+          "deliveryScope": "剩余楼栋（1-7#楼、9#、11#、13#、地库、社区用房）",
+          "progress": {
+            "indoor": 40,
+            "public": 40,
+            "facade": 40,
+            "outdoor": 50,
+            "basement": 40,
+            "slowBuildingNo": "9#",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 90,
+              "抹灰": 20,
+              "精装": 10,
+              "部品": 0,
+              "保温": 80,
+              "外墙涂料": 79.8
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-04",
+              "checkType": "质检小组月检",
+              "checkDate": "2026-04-23",
+              "score": 89,
+              "files": [
+                {
+                  "name": "【南京凤樾府项目】工程月度巡查报告（2026年4月23）.pdf",
+                  "type": "application/pdf",
+                  "data": "[已清理]",
+                  "size": 4265420
+                }
+              ]
+            },
+            {
+              "checkMonth": "2026-05",
+              "checkType": "质检小组月检",
+              "checkDate": "2026-05-22",
+              "score": 90.98,
+              "files": [
+                {
+                  "name": "【南京凤樾府项目】工程月度巡查报告（2026年5月22）.pdf",
+                  "type": "application/pdf",
+                  "data": "[已清理]",
+                  "size": 3014068
+                }
+              ]
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2028-06-01",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2028-06-01",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/25 15:08:50",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779170396069",
+      "name": "上海·西派海上",
+      "company": "华东",
+      "area": "13.68",
+      "engineer": "王从铎",
+      "type": "合作",
+      "partner": "厦门国贸",
+      "shareRatio": "45%",
+      "lines": "营销、设计、成本、客服、综合",
+      "phases": [
+        {
+          "id": "phase_1779169828693_vp47w",
+          "name": "一期一标段",
+          "area": "4.98",
+          "status": "竣备待交付",
+          "contractor": "中铁二十四局",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 282,
+          "completionDate": "2025-12-24",
+          "deliveryDate": "2026-12-25",
+          "contractDeliveryDate": "2026-12-31",
+          "inspectionStartDate": "2025-09-19",
+          "openDayPlanDate": "2026-06-20",
+          "jointAssessmentPlanDate": "2026-11-25",
+          "deliveryScope": "1#-6#",
+          "progress": {
+            "indoor": 100,
+            "public": 100,
+            "facade": 100,
+            "outdoor": 100,
+            "basement": 100,
+            "slowBuildingNo": "3#（16F)",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 100,
+              "部品": 100,
+              "保温": 100,
+              "外墙涂料": 100
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "",
+              "checkType": "质检小组月检",
+              "checkDate": "2026-03-26",
+              "score": 86.61,
+              "files": [
+                {
+                  "name": "【西派海上项目】工程月度巡查报告（2026年3月26日）.pdf",
+                  "type": "application/pdf",
+                  "data": "[已清理]",
+                  "size": 4458491
+                }
+              ]
+            },
+            {
+              "checkMonth": "",
+              "checkType": "质检小组月检",
+              "checkDate": "2026-04-28",
+              "score": 87.81,
+              "files": [
+                {
+                  "name": "【西派海上项目】工程月度巡查报告（2026年4月28）.pdf",
+                  "type": "application/pdf",
+                  "data": "[已清理]",
+                  "size": 4611704
+                }
+              ]
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "已开展",
+              "remainingIssues": 1344
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-06-20",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-05-30",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/25 15:36:26",
+          "lastUpdateUser": "用户"
+        },
+        {
+          "id": "phase_1779170488131_oz1pb",
+          "name": "一期二标段",
+          "area": "8.7",
+          "status": "竣备待交付",
+          "contractor": "中铁十二局",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 485,
+          "completionDate": "2025-12-24",
+          "deliveryDate": "2026-12-25",
+          "contractDeliveryDate": "2026-12-31",
+          "inspectionStartDate": "2025-09-19",
+          "openDayPlanDate": "2026-06-20",
+          "jointAssessmentPlanDate": "2026-11-25",
+          "deliveryScope": "7#-16#",
+          "progress": {
+            "indoor": 100,
+            "public": 100,
+            "facade": 100,
+            "outdoor": 100,
+            "basement": 100,
+            "slowBuildingNo": "15#(16F）",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 100,
+              "部品": 100,
+              "保温": 100,
+              "外墙涂料": 100
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-03",
+              "checkType": "质检小组月检",
+              "checkDate": "2026-03-26",
+              "score": 86.61,
+              "files": []
+            },
+            {
+              "checkMonth": "2026-04",
+              "checkType": "质检小组月检",
+              "checkDate": "2026-04-28",
+              "score": 87.81,
+              "files": []
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "已开展",
+              "remainingIssues": 1344
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-06-20",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-05-30",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/25 15:36:35",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779243677321",
+      "name": "上海·花语前湾",
+      "company": "华东",
+      "area": "15.45",
+      "engineer": "顾浩威",
+      "type": "操盘",
+      "landDate": "2023-07-12",
+      "openDate": "2023-11-21",
+      "phases": [
+        {
+          "id": "phase_1779243760103_czoet",
+          "name": "一期",
+          "area": "8.98",
+          "status": "已移交物业",
+          "contractor": "中铁城建集团第一工程有限公司",
+          "deliveryStandard": "毛坯+精装",
+          "deliveryHouseholds": 719,
+          "completionDate": "2024-12-03",
+          "deliveryDate": "2025-08-07",
+          "contractDeliveryDate": "2025-12-30",
+          "inspectionStartDate": "2024-11-10",
+          "openDayPlanDate": "2024-11-26",
+          "jointAssessmentPlanDate": "2025-08-07",
+          "deliveryScope": "1#-12#",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/20 10:41:00",
+          "lastUpdateUser": "用户"
+        },
+        {
+          "id": "phase_1779244571775_s0zam",
+          "name": "二期",
+          "area": "6.47",
+          "status": "已移交物业",
+          "contractor": "中铁城建集团第一工程有限公司",
+          "deliveryStandard": "毛坯+精装",
+          "deliveryHouseholds": 636,
+          "completionDate": "2025-10-20",
+          "deliveryDate": "2025-12-30",
+          "contractDeliveryDate": "2026-06-30",
+          "inspectionStartDate": "2025-09-25",
+          "openDayPlanDate": "2025-10-11",
+          "jointAssessmentPlanDate": "2025-12-30",
+          "deliveryScope": "13#-20#",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/20 10:41:02",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779256314734",
+      "name": "西安-花语澜溪",
+      "company": "华中",
+      "area": "15.4",
+      "engineer": "魏成",
+      "type": "操盘",
+      "landDate": "2024-03-19",
+      "openDate": "2024-08-18",
+      "phases": [
+        {
+          "id": "phase_1779255997621_r4r5s",
+          "name": "一批次",
+          "area": "11.6",
+          "status": "集中交付期内",
+          "contractor": "中铁城建集团第一工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 531,
+          "completionDate": "",
+          "deliveryDate": "2026-05-14",
+          "contractDeliveryDate": "2026-05-30",
+          "inspectionStartDate": "2025-09-12",
+          "openDayPlanDate": "2026-04-26",
+          "jointAssessmentPlanDate": "2026-04-14",
+          "deliveryScope": "1#-7#楼、地下室",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "已开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "已开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "已开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "已开展",
+            "actualDate": "2026-04-26",
+            "guests": 295,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "已开展",
+            "actualDate": "2026-04-14",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "截至5月22日，应交付300户，实际交付236户，户均0.97条",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/22 16:50:34",
+          "lastUpdateUser": "青"
+        },
+        {
+          "id": "phase_1779256164053_fkdck",
+          "name": "二批次",
+          "area": "3.8",
+          "status": "在建",
+          "contractor": "中铁城建集团第一工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 275,
+          "completionDate": "2026-11-30",
+          "deliveryDate": "2027-04-30",
+          "contractDeliveryDate": "2027-04-30",
+          "inspectionStartDate": "2026-10-30",
+          "openDayPlanDate": "2027-03-30",
+          "jointAssessmentPlanDate": "2027-03-10",
+          "deliveryScope": "8#、9#、10#楼",
+          "progress": {
+            "indoor": 40,
+            "public": 30,
+            "facade": 10,
+            "outdoor": 0,
+            "basement": 80,
+            "slowBuildingNo": "10#（23F）",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 5,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-05",
+              "checkType": "项目组月检",
+              "checkDate": "2026-05-20",
+              "score": 97.14,
+              "files": []
+            },
+            {
+              "checkMonth": "2026-05",
+              "checkType": "质检小组季度",
+              "checkDate": "2026-05-19",
+              "score": 97.35,
+              "files": []
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2027-03-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2027-03-10",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/25 11:36:52",
+          "lastUpdateUser": "青"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779415513640",
+      "name": "西安-璞悦云萃",
+      "company": "华中",
+      "area": "6.7",
+      "engineer": "章超",
+      "type": "合作",
+      "landDate": "2024-12-27",
+      "openDate": "2025-06-15",
+      "phases": [
+        {
+          "id": "phase_1779415364935_qw5s4",
+          "name": "",
+          "area": "6.7",
+          "status": "在建",
+          "contractor": "中铁二十三局集团第四工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 365,
+          "completionDate": "2026-12-25",
+          "deliveryDate": "2026-12-30",
+          "contractDeliveryDate": "2026-12-30",
+          "inspectionStartDate": "2026-05-12",
+          "openDayPlanDate": "2026-11-30",
+          "jointAssessmentPlanDate": "2026-10-30",
+          "deliveryScope": "1-6#住宅，7-8#商业",
+          "progress": {
+            "indoor": 85,
+            "public": 85,
+            "facade": 85,
+            "outdoor": 60,
+            "basement": 85,
+            "slowBuildingNo": "3#(25F)",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 0,
+              "部品": 0,
+              "保温": 95,
+              "外墙涂料": 90
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-05",
+              "checkType": "项目组月检",
+              "checkDate": "2026-05-22",
+              "score": 98.5,
+              "files": []
+            },
+            {
+              "checkMonth": "2026-05",
+              "checkType": "质检小组季度",
+              "checkDate": "2026-05-08",
+              "score": 98.47,
+              "files": []
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-11-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-10-30",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/26 10:51:11",
+          "lastUpdateUser": "青"
+        }
+      ],
+      "partner": "广州越秀地产集团有限公司",
+      "shareRatio": "51%",
+      "lines": "工程、财务、成本、物业"
+    },
+    {
+      "id": "proj_1779412102202",
+      "name": "西安-西派天悦",
+      "company": "华中",
+      "area": "18.4",
+      "engineer": "王昊",
+      "type": "合作",
+      "partner": "越秀",
+      "shareRatio": "49%",
+      "lines": "工程、设计、成本、客服",
+      "phases": [
+        {
+          "id": "phase_1779410963806_6281e",
+          "name": "一标段",
+          "area": "11.66",
+          "status": "已移交物业",
+          "contractor": "中铁建设集团有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 462,
+          "completionDate": "",
+          "deliveryDate": "",
+          "contractDeliveryDate": "2025-11-30",
+          "inspectionStartDate": "2025-08-01",
+          "openDayPlanDate": "2025-10-15",
+          "jointAssessmentPlanDate": "2025-10-20",
+          "deliveryScope": "1#-8#",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "",
+          "lastUpdateUser": ""
+        },
+        {
+          "id": "phase_1779411076472_n2d1m",
+          "name": "二标段",
+          "area": "6.77",
+          "status": "在建",
+          "contractor": "重庆万泰集团建设有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 234,
+          "completionDate": "2027-01-31",
+          "deliveryDate": "2027-04-30",
+          "contractDeliveryDate": "2027-04-30",
+          "inspectionStartDate": "2026-12-30",
+          "openDayPlanDate": "2027-03-31",
+          "jointAssessmentPlanDate": "2027-03-20",
+          "deliveryScope": "10#、12#、13#正常交付；9#、11#以销定产；",
+          "progress": {
+            "indoor": 50,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 10,
+            "basement": 30,
+            "slowBuildingNo": "10#（25F）",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 50,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-05",
+              "checkType": "项目组月检",
+              "checkDate": "2026-05-21",
+              "score": 99.17,
+              "files": []
+            },
+            {
+              "checkMonth": "2026-05",
+              "checkType": "质检小组季度",
+              "checkDate": "2026-05-18",
+              "score": 99.32,
+              "files": []
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2027-03-31",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2027-03-20",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/25 11:35:28",
+          "lastUpdateUser": "青"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779434928619",
+      "name": "西安-西派天麓（DK9）",
+      "company": "华中",
+      "area": "13.03",
+      "engineer": "张晓伟",
+      "type": "操盘",
+      "landDate": "2024-01-10",
+      "openDate": "2024-11-22",
+      "phases": [
+        {
+          "id": "phase_1779434958626_ofi2r",
+          "name": "西派天峯中心",
+          "area": "3.8",
+          "status": "在建",
+          "contractor": "中铁二十局集团第六工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 269,
+          "completionDate": "2027-03-30",
+          "deliveryDate": "2027-06-30",
+          "contractDeliveryDate": "2027-06-30",
+          "inspectionStartDate": "2027-02-28",
+          "openDayPlanDate": "2027-05-30",
+          "jointAssessmentPlanDate": "2027-05-15",
+          "deliveryScope": "E栋22层及F栋3层写字楼及地下三层车库",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 30,
+            "slowBuildingNo": "E栋（23F）",
+            "slowProgress": {
+              "砼": 98,
+              "砌体": 12,
+              "抹灰": 12,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-05",
+              "checkType": "项目组月检",
+              "checkDate": "2026-05-22",
+              "score": 97,
+              "files": []
+            },
+            {
+              "checkMonth": "2026-05",
+              "checkType": "质检小组季度",
+              "checkDate": "2026-05-13",
+              "score": 99.23,
+              "files": []
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2027-05-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2027-05-15",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/25 11:35:36",
+          "lastUpdateUser": "青"
+        },
+        {
+          "id": "phase_1779673631343_wtvfi",
+          "name": "西派天麓",
+          "area": "9.23",
+          "status": "已移交物业",
+          "contractor": "中铁二十局集团第六工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 468,
+          "completionDate": "",
+          "deliveryDate": "",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "1-5#楼",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/25 09:51:39",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779442304761",
+      "name": "西安-西派天著（DK8）",
+      "company": "华中",
+      "area": "27.39",
+      "engineer": "张晓伟",
+      "type": "操盘",
+      "landDate": "2024-02-26",
+      "openDate": "2024-12-25",
+      "phases": [
+        {
+          "id": "phase_1779431337657_xikdh",
+          "name": "西派天著一标段",
+          "area": "13.7",
+          "status": "竣备待交付",
+          "contractor": "中铁建设集团有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 582,
+          "completionDate": "",
+          "deliveryDate": "2026-10-30",
+          "contractDeliveryDate": "2026-12-30",
+          "inspectionStartDate": "2025-10-23",
+          "openDayPlanDate": "2026-09-30",
+          "jointAssessmentPlanDate": "2026-10-15",
+          "deliveryScope": "1-5.6.8.9号楼",
+          "progress": {
+            "indoor": 100,
+            "public": 100,
+            "facade": 100,
+            "outdoor": 95,
+            "basement": 90,
+            "slowBuildingNo": "9#（16F）",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 0,
+              "部品": 0,
+              "保温": 100,
+              "外墙涂料": 100
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "已开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "已开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "已开展",
+              "remainingIssues": 7004
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-09-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-10-15",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/25 11:00:13",
+          "lastUpdateUser": "青"
+        },
+        {
+          "id": "phase_1779673336151_74yzc",
+          "name": "西派天著二标段",
+          "area": "13.69",
+          "status": "停工",
+          "contractor": "中铁城建集团第一工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 578,
+          "completionDate": "",
+          "deliveryDate": "",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "7#、10-15#、16#（幼儿园）",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 10,
+            "slowBuildingNo": "14#（25F）",
+            "slowProgress": {
+              "砼": 4,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/25 10:56:49",
+          "lastUpdateUser": "青"
+        },
+        {
+          "id": "phase_1779673511031_9o0o6",
+          "name": "西派天峰中心1#综合楼",
+          "area": "9.89",
+          "status": "在建",
+          "contractor": "中铁二十局集团第六工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 0,
+          "completionDate": "",
+          "deliveryDate": "",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "1-B#（21F）",
+            "slowProgress": {
+              "砼": 0,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/25 10:57:09",
+          "lastUpdateUser": "青"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779414419955",
+      "name": "西安-西派昱府",
+      "company": "华中",
+      "area": "21.31",
+      "engineer": "王成洋",
+      "type": "代建",
+      "owner": "西安自贸港置业有限公司",
+      "landDate": "2022-09-01",
+      "bidDate": "2024-12-19",
+      "agentLines": "除财务外，全流程代建",
+      "brandOutput": "是",
+      "phases": [
+        {
+          "id": "phase_1779414296276_lsq2o",
+          "name": "一标段",
+          "area": "10.87",
+          "status": "在建",
+          "contractor": "中铁城建集团第一工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 532,
+          "completionDate": "2028-04-30",
+          "deliveryDate": "2028-05-30",
+          "contractDeliveryDate": "2028-05-30",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "2028-04-30",
+          "deliveryScope": "1#、2#、3#、6#、7#、8#、9#、10#、12#、17#、18#、S4#楼及部分地下室",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 85,
+            "slowBuildingNo": "9#（17F）",
+            "slowProgress": {
+              "砼": 0,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-05",
+              "checkType": "项目组月检",
+              "checkDate": "2026-05-15",
+              "score": 98.5,
+              "files": []
+            },
+            {
+              "checkMonth": "2026-05",
+              "checkType": "质检小组季度",
+              "checkDate": "2026-05-14",
+              "score": 98.57,
+              "files": []
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2028-04-30",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/26 15:17:13",
+          "lastUpdateUser": "青"
+        },
+        {
+          "id": "phase_1779689311781_rs4r9",
+          "name": "二标段",
+          "area": "10.44",
+          "status": "未开工",
+          "contractor": "中铁二十三局集团第四工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 489,
+          "completionDate": "2029-06-30",
+          "deliveryDate": "2029-06-30",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "4#、5#、11#、13#、14#、15#、16#、19#、20#、21#、22#、S1#、S2#、S3#楼及部分地下室",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "",
+          "lastUpdateUser": ""
+        }
+      ]
+    },
+    {
+      "id": "proj_1779689758602",
+      "name": "西安-樽樾",
+      "company": "华中",
+      "area": "28.53",
+      "engineer": "宋小伟",
+      "type": "合作",
+      "partner": "广州越秀集团股份有限公司",
+      "shareRatio": "49%",
+      "lines": "工程、招采、客服、营销",
+      "phases": [
+        {
+          "id": "phase_1779678507183_n2xkc",
+          "name": "一标段",
+          "area": "15.6",
+          "status": "集中交付期内",
+          "contractor": "中铁二十三局集团第四工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 532,
+          "completionDate": "",
+          "deliveryDate": "2026-05-24",
+          "contractDeliveryDate": "2026-06-30",
+          "inspectionStartDate": "2025-09-08",
+          "openDayPlanDate": "2026-04-27",
+          "jointAssessmentPlanDate": "2026-04-05",
+          "deliveryScope": "3#、4#、5#、9#、10#、11#、14#、15#、18#、19#、22#、23#",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "已开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "已开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "已开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "已开展",
+            "actualDate": "2026-04-27",
+            "guests": 380,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "已开展",
+            "actualDate": "2026-04-05",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "截止5月25日，应交付446户，实际交付275户，户均0.98条",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/26 14:53:02",
+          "lastUpdateUser": "青"
+        },
+        {
+          "id": "phase_1779689883014_vz6x4",
+          "name": "二标段",
+          "area": "12.93",
+          "status": "在建",
+          "contractor": "中天西北建设投资集团有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 480,
+          "completionDate": "2026-12-30",
+          "deliveryDate": "2027-06-30",
+          "contractDeliveryDate": "2027-06-30",
+          "inspectionStartDate": "2026-09-01",
+          "openDayPlanDate": "2027-05-30",
+          "jointAssessmentPlanDate": "2027-04-15",
+          "deliveryScope": "1#、2#、6#、7#、8#、12#、13#、16#、17#、20#、21#",
+          "progress": {
+            "indoor": 70,
+            "public": 49,
+            "facade": 50,
+            "outdoor": 15,
+            "basement": 70,
+            "slowBuildingNo": "8",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 74.9,
+              "精装": 0,
+              "部品": 0,
+              "保温": 50,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-05",
+              "checkType": "项目组月检",
+              "checkDate": "2026-05-19",
+              "score": 98.2,
+              "files": []
+            },
+            {
+              "checkMonth": "2026-05",
+              "checkType": "质检小组季度",
+              "checkDate": "2026-05-07",
+              "score": 98.65,
+              "files": []
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2027-05-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2027-04-15",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/26 14:54:56",
+          "lastUpdateUser": "青"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779700480864",
+      "name": "西安-西派玺悦",
+      "company": "华中",
+      "area": "19.50",
+      "engineer": "顾雷",
+      "type": "操盘",
+      "landDate": "2023-09-19",
+      "openDate": "2024-01-13",
+      "phases": [
+        {
+          "id": "phase_1779699260272_6fp86",
+          "name": "二标段一批次",
+          "area": "7.13",
+          "status": "在建",
+          "contractor": "中铁二十三局集团第四工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 204,
+          "completionDate": "2026-10-30",
+          "deliveryDate": "2026-11-30",
+          "contractDeliveryDate": "2026-11-30",
+          "inspectionStartDate": "2026-05-06",
+          "openDayPlanDate": "2026-10-30",
+          "jointAssessmentPlanDate": "2026-10-20",
+          "deliveryScope": "1#、12-14#、17#-19#、21#号楼",
+          "progress": {
+            "indoor": 70,
+            "public": 50,
+            "facade": 90,
+            "outdoor": 50,
+            "basement": 60,
+            "slowBuildingNo": "14#（13F）",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 0,
+              "部品": 0,
+              "保温": 100,
+              "外墙涂料": 85
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-05",
+              "checkType": "项目组月检",
+              "checkDate": "",
+              "score": 0,
+              "files": []
+            },
+            {
+              "checkMonth": "2026-05",
+              "checkType": "质检小组季度",
+              "checkDate": "2026-05-09",
+              "score": 97,
+              "files": []
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "已开展",
+              "remainingIssues": 1732
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-10-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-10-20",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/26 14:50:00",
+          "lastUpdateUser": "青"
+        },
+        {
+          "id": "phase_1779700297223_q25wa",
+          "name": "二标段二批次",
+          "area": "2.51",
+          "status": "停工",
+          "contractor": "中铁二十三局集团第四工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 140,
+          "completionDate": "",
+          "deliveryDate": "",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "住宅2#、3#及4#号楼",
+          "progress": {
+            "indoor": 10,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 60,
+            "slowBuildingNo": "4#(20F)",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/27 17:27:36",
+          "lastUpdateUser": "青"
+        }
+      ]
+    },
+    {
+      "id": "proj_demo1",
+      "name": "西安-花语博悦",
+      "company": "华中",
+      "area": "9.8",
+      "engineer": "侯进胜",
+      "type": "操盘",
+      "landDate": "2025-02-19",
+      "openDate": "2025-05-30",
+      "phases": [
+        {
+          "id": "phase_demo1a",
+          "name": "一标段",
+          "area": "4.3",
+          "status": "竣备待交付",
+          "contractor": "中铁建设集团有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 267,
+          "completionDate": "",
+          "deliveryDate": "2027-03-30",
+          "contractDeliveryDate": "2027-03-30",
+          "inspectionStartDate": "2026-05-05",
+          "openDayPlanDate": "2027-02-23",
+          "jointAssessmentPlanDate": "2027-01-30",
+          "deliveryScope": "4、6、7、8、9",
+          "progress": {
+            "indoor": 100,
+            "public": 100,
+            "facade": 100,
+            "outdoor": 100,
+            "basement": 80,
+            "slowBuildingNo": "7#（16F）",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 0,
+              "部品": 0,
+              "保温": 100,
+              "外墙涂料": 100
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "已开展",
+              "remainingIssues": 2394
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2027-02-23",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2027-01-30",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/22 14:11:45",
+          "lastUpdateUser": "用户"
+        },
+        {
+          "id": "phase_demo1b",
+          "name": "二标段",
+          "area": "5.5",
+          "status": "在建",
+          "contractor": "中铁建设集团有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 346,
+          "completionDate": "2026-11-30",
+          "deliveryDate": "2027-03-30",
+          "contractDeliveryDate": "2027-03-30",
+          "inspectionStartDate": "2026-08-05",
+          "openDayPlanDate": "2027-02-23",
+          "jointAssessmentPlanDate": "2027-01-30",
+          "deliveryScope": "1、2、3、5号楼",
+          "progress": {
+            "indoor": 95,
+            "public": 92,
+            "facade": 97,
+            "outdoor": 94,
+            "basement": 80,
+            "slowBuildingNo": "3#（26F）",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 0,
+              "部品": 0,
+              "保温": 100,
+              "外墙涂料": 95
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-05",
+              "checkType": "项目组月检",
+              "checkDate": "2026-05-22",
+              "score": 97.6,
+              "files": []
+            },
+            {
+              "checkMonth": "2026-05",
+              "checkType": "质检小组季度",
+              "checkDate": "2026-05-12",
+              "score": 98.6,
+              "files": []
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2027-02-23",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2027-01-30",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/26 11:35:28",
+          "lastUpdateUser": "青"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779411251988",
+      "name": "太原-花语雅颂",
+      "company": "华中",
+      "area": "379827.2",
+      "engineer": "游宇",
+      "type": "代建",
+      "owner": "光大银行特别资产管理部",
+      "landDate": "2025-05-20",
+      "bidDate": "2025-05-20",
+      "agentLines": "除财务外，全流程代建",
+      "brandOutput": "是",
+      "phases": [
+        {
+          "id": "phase_1779411261534_olf8f",
+          "name": "一标段",
+          "area": "14.99",
+          "status": "在建",
+          "contractor": "中铁十二局集团建筑安装工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 1010,
+          "completionDate": "2026-12-31",
+          "deliveryDate": "2027-04-30",
+          "contractDeliveryDate": "2027-04-30",
+          "inspectionStartDate": "2026-10-07",
+          "openDayPlanDate": "2027-03-30",
+          "jointAssessmentPlanDate": "2027-03-20",
+          "deliveryScope": "7#、8#、9#、10#、11#楼",
+          "progress": {
+            "indoor": 5,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 64.9,
+            "slowBuildingNo": "10#（33F）",
+            "slowProgress": {
+              "砼": 96,
+              "砌体": 60,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-05",
+              "checkType": "项目组月检",
+              "checkDate": "2026-05-26",
+              "score": 96.5,
+              "files": []
+            },
+            {
+              "checkMonth": "2026-05",
+              "checkType": "质检小组季度",
+              "checkDate": "2026-05-20",
+              "score": 96.5,
+              "files": []
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2027-03-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2027-03-20",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/27 10:18:30",
+          "lastUpdateUser": "青"
+        },
+        {
+          "id": "phase_1779774502214_wlte2",
+          "name": "二标段",
+          "area": "22.99",
+          "status": "未开工",
+          "contractor": "中铁十二局集团建筑安装工程有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 1469,
+          "completionDate": "2028-12-31",
+          "deliveryDate": "2029-04-30",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "1-6号楼、S1-S6商业、幼儿园",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "",
+          "lastUpdateUser": ""
+        }
+      ]
+    },
+    {
+      "id": "proj_1779765899794",
+      "name": "太原-彭村城中村改造项目（地块十四）",
+      "company": "华中",
+      "area": "23.95",
+      "engineer": "曹渊博",
+      "type": "代建",
+      "owner": "太原市光柏房地产开发有限公司",
+      "landDate": "2023-08-17",
+      "bidDate": "2025-11-21",
+      "agentLines": "全过程代建",
+      "brandOutput": "是",
+      "phases": []
+    },
+    {
+      "id": "proj_1779180136759",
+      "name": "长沙-花语江南",
+      "company": "华中",
+      "area": "32.8",
+      "engineer": "邓佳威",
+      "type": "合作",
+      "partner": "中铁建设、中铁城建",
+      "shareRatio": "78%",
+      "lines": "全条线",
+      "phases": [
+        {
+          "id": "phase_1779179781022_zaxgm",
+          "name": "一期",
+          "area": "15",
+          "status": "已移交物业",
+          "contractor": "中铁城建集团有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 906,
+          "completionDate": "",
+          "deliveryDate": "",
+          "contractDeliveryDate": "2026-06-30",
+          "inspectionStartDate": "2026-08-01",
+          "openDayPlanDate": "2025-12-03",
+          "jointAssessmentPlanDate": "2025-11-26",
+          "deliveryScope": "1#-3#楼、5#-13#楼（合计12栋楼）",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/28 11:04:41",
+          "lastUpdateUser": "用户"
+        },
+        {
+          "id": "phase_1779180150270_kgru0",
+          "name": "二期",
+          "area": "17.8",
+          "status": "在建",
+          "contractor": "中铁建设集团有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 552,
+          "completionDate": "2026-11-30",
+          "deliveryDate": "2026-12-30",
+          "contractDeliveryDate": "2027-06-30",
+          "inspectionStartDate": "2026-08-30",
+          "openDayPlanDate": "2026-12-10",
+          "jointAssessmentPlanDate": "2026-11-30",
+          "deliveryScope": "23#、25#-31#楼（合计8栋楼）",
+          "progress": {
+            "indoor": 85,
+            "public": 50,
+            "facade": 30,
+            "outdoor": 50,
+            "basement": 85,
+            "slowBuildingNo": "30#（27F)",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 0,
+              "部品": 0,
+              "保温": 20,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-05",
+              "checkType": "项目组月检",
+              "checkDate": "2026-05-26",
+              "score": 98.84,
+              "files": []
+            },
+            {
+              "checkMonth": "2026-05",
+              "checkType": "质检小组季度",
+              "checkDate": "2026-05-14",
+              "score": 96.67,
+              "files": []
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-12-10",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-11-30",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/28 11:15:08",
+          "lastUpdateUser": "青"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779184628454",
+      "name": "深圳·李松蓢代建",
+      "company": "南沙",
+      "area": "28.8",
+      "engineer": "郭江",
+      "type": "代建",
+      "owner": "深圳市特发鸿顺实业有限公司",
+      "landDate": "2025-11-20",
+      "bidDate": "2025-12-29",
+      "agentLines": "深汕项目组",
+      "brandOutput": "是",
+      "phases": [
+        {
+          "id": "phase_1779184708540_nzxj1",
+          "name": "03-07地块",
+          "area": "11.9",
+          "status": "在建",
+          "contractor": "中建三局集团（深圳）有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 419,
+          "completionDate": "2028-09-01",
+          "deliveryDate": "2029-03-25",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "2029-01-24",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 3,
+            "slowBuildingNo": "",
+            "slowProgress": {
+              "砼": 0,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2029-01-29",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2029-02-08",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/20 18:58:56",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779239683190",
+      "name": "花都·花语天珹",
+      "company": "南沙",
+      "area": "27.8",
+      "engineer": "周果",
+      "type": "合作",
+      "partner": "广东省广晟产城发展集团有限公司",
+      "shareRatio": "45",
+      "lines": "工程、设计、报建、招采",
+      "phases": [
+        {
+          "id": "phase_1779238607935_xft52",
+          "name": "一期一标段7#楼",
+          "area": "1.8",
+          "status": "已移交物业",
+          "contractor": "中铁建设集团南方工程有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 156,
+          "completionDate": "2025-04-22",
+          "deliveryDate": "2025-12-30",
+          "contractDeliveryDate": "2025-12-31",
+          "inspectionStartDate": "2025-07-01",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "2025-11-24",
+          "deliveryScope": "7#楼",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "",
+          "lastUpdateUser": ""
+        },
+        {
+          "id": "phase_1779239177753_zdsx4",
+          "name": "一期二标段8#楼",
+          "area": "1.89",
+          "status": "集中交付期内",
+          "contractor": "中铁二十二局集团有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 168,
+          "completionDate": "2025-03-31",
+          "deliveryDate": "2025-11-30",
+          "contractDeliveryDate": "2025-12-30",
+          "inspectionStartDate": "2025-07-01",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "2025-11-24",
+          "deliveryScope": "8#楼",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "已开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "已开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "已开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "已开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "已开展",
+            "actualDate": "2025-11-24",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "截止5月28日，项目整改渗漏点，万平米渗漏点0.55个",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/28 17:20:09",
+          "lastUpdateUser": "刘俊"
+        },
+        {
+          "id": "phase_1779239311710_e4k93",
+          "name": "一期二标段5#楼",
+          "area": "2.1",
+          "status": "已移交物业",
+          "contractor": "中铁二十二局集团有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 168,
+          "completionDate": "2025-09-25",
+          "deliveryDate": "2025-12-30",
+          "contractDeliveryDate": "2025-12-31",
+          "inspectionStartDate": "2025-07-01",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "2025-11-24",
+          "deliveryScope": "5#楼",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "",
+          "lastUpdateUser": ""
+        },
+        {
+          "id": "phase_1779239368394_3pn0t",
+          "name": "一期二标段9-10#楼",
+          "area": "3.36",
+          "status": "竣备待交付",
+          "contractor": "中铁二十二局集团有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 312,
+          "completionDate": "2026-04-09",
+          "deliveryDate": "2026-08-30",
+          "contractDeliveryDate": "2026-08-31",
+          "inspectionStartDate": "2026-05-14",
+          "openDayPlanDate": "2026-07-30",
+          "jointAssessmentPlanDate": "2026-07-30",
+          "deliveryScope": "9-10#楼",
+          "progress": {
+            "indoor": 95,
+            "public": 95,
+            "facade": 98,
+            "outdoor": 100,
+            "basement": 98,
+            "slowBuildingNo": "10#楼（27F）",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 95,
+              "部品": 95,
+              "保温": 100,
+              "外墙涂料": 95
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "已开展",
+              "remainingIssues": 12741
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-07-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-06-15",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 16:15:54",
+          "lastUpdateUser": "刘俊"
+        },
+        {
+          "id": "phase_1779239567064_mdpb5",
+          "name": "一期二标段11#楼",
+          "area": "1.69",
+          "status": "在建",
+          "contractor": "中铁二十二局集团有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 156,
+          "completionDate": "2026-05-31",
+          "deliveryDate": "2026-08-30",
+          "contractDeliveryDate": "2026-08-31",
+          "inspectionStartDate": "2026-05-14",
+          "openDayPlanDate": "2026-07-30",
+          "jointAssessmentPlanDate": "2026-07-30",
+          "deliveryScope": "11#楼",
+          "progress": {
+            "indoor": 90,
+            "public": 95,
+            "facade": 95,
+            "outdoor": 100,
+            "basement": 95,
+            "slowBuildingNo": "11#（27F）",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 90,
+              "部品": 95,
+              "保温": 100,
+              "外墙涂料": 95
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-07-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-06-05",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 16:13:07",
+          "lastUpdateUser": "刘俊"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779259380160",
+      "name": "东莞·松湖尊悦",
+      "company": "南沙",
+      "area": "48.17",
+      "engineer": "吴圣斌",
+      "type": "代建",
+      "owner": "东莞鸿钏房地产开发有限公司",
+      "landDate": "2020-05-28",
+      "bidDate": "2025-07-05",
+      "agentLines": "",
+      "brandOutput": "是",
+      "phases": [
+        {
+          "id": "phase_1779259847841_cqyox",
+          "name": "二期11#楼",
+          "area": "2.33",
+          "status": "已移交物业",
+          "contractor": "广州市第二市政工程有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 200,
+          "completionDate": "2025-12-22",
+          "deliveryDate": "2025-12-31",
+          "contractDeliveryDate": "2025-12-31",
+          "inspectionStartDate": "2025-12-05",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "二期11#楼",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "",
+          "lastUpdateUser": ""
+        },
+        {
+          "id": "phase_1779260106953_nqtej",
+          "name": "二期4-10#、12-13#楼",
+          "area": "23.31",
+          "status": "停工",
+          "contractor": "广州市第二市政工程有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 0,
+          "completionDate": "",
+          "deliveryDate": "",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "二期其余所有楼栋及公区、地下室",
+          "progress": {
+            "indoor": 20,
+            "public": 20,
+            "facade": 20,
+            "outdoor": 20,
+            "basement": 50,
+            "slowBuildingNo": "5-10#",
+            "slowProgress": {
+              "砼": 0,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 15:52:35",
+          "lastUpdateUser": "松湖尊悦"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779258998266",
+      "name": "南沙·海语天悦湾",
+      "company": "南沙",
+      "area": "21.92",
+      "engineer": "陈大正",
+      "type": "合作",
+      "partner": "越秀、南投",
+      "shareRatio": "35%",
+      "lines": "营销、工程",
+      "phases": [
+        {
+          "id": "phase_1779258661321_oy128",
+          "name": "三标段（3#楼）",
+          "area": "1.92",
+          "status": "集中交付期内",
+          "contractor": "中天建设集团有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 180,
+          "completionDate": "2025-07-31",
+          "deliveryDate": "2026-05-22",
+          "contractDeliveryDate": "2026-05-30",
+          "inspectionStartDate": "2025-08-04",
+          "openDayPlanDate": "2026-04-17",
+          "jointAssessmentPlanDate": "2026-05-15",
+          "deliveryScope": "3#楼",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "已开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "已开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "已开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "已开展",
+            "actualDate": "2026-04-17",
+            "guests": 57,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "已开展",
+            "actualDate": "2026-05-15",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "截止5月26日，符合交付条件106户，到访82户，实际交付77户，户均问题0.42条。",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/26 16:23:50",
+          "lastUpdateUser": "刘俊"
+        },
+        {
+          "id": "phase_1779258801511_h4giz",
+          "name": "二标段（2、5#楼）",
+          "area": "7.99",
+          "status": "停工",
+          "contractor": "中天建设集团有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 444,
+          "completionDate": "2027-08-06",
+          "deliveryDate": "",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "2#楼、5#楼、7#幼儿园、地下室负三层",
+          "progress": {
+            "indoor": 26,
+            "public": 26,
+            "facade": 90,
+            "outdoor": 100,
+            "basement": 75,
+            "slowBuildingNo": "5#（42F）",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 26,
+              "部品": 0,
+              "保温": 100,
+              "外墙涂料": 90
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 16:17:47",
+          "lastUpdateUser": "刘俊"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779241139386",
+      "name": "增城·学府尚城",
+      "company": "南沙",
+      "area": "49.5",
+      "engineer": "谭浪",
+      "type": "代建",
+      "owner": "光大信托",
+      "landDate": "2021-04-26",
+      "bidDate": "2025-07-20",
+      "agentLines": "",
+      "brandOutput": "是",
+      "phases": [
+        {
+          "id": "phase_1779241149975_lw8dq",
+          "name": "一期（5#楼）",
+          "area": "1.8",
+          "status": "已移交物业",
+          "contractor": "福建省顺安建筑工程有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 192,
+          "completionDate": "2024-05-24",
+          "deliveryDate": "2025-12-27",
+          "contractDeliveryDate": "2025-12-30",
+          "inspectionStartDate": "2026-09-10",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "2025-12-01",
+          "deliveryScope": "5#（毛坯竣备，精装交付）",
+          "progress": {
+            "indoor": 90,
+            "public": 90,
+            "facade": 100,
+            "outdoor": 100,
+            "basement": 100,
+            "slowBuildingNo": "8#",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 10,
+              "部品": 0,
+              "保温": 100,
+              "外墙涂料": 100
+            }
+          },
+          "qualityChecks": [
+            {
+              "checkMonth": "2026-05",
+              "checkType": "质检小组月检",
+              "checkDate": "2026-05-19",
+              "score": 89.5,
+              "files": []
+            }
+          ],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-10-10",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/20 11:14:22",
+          "lastUpdateUser": "用户"
+        },
+        {
+          "id": "phase_1779241359895_t49ex",
+          "name": "一期（8#楼）",
+          "area": "1.8",
+          "status": "在建",
+          "contractor": "福建省顺安建筑工程有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 192,
+          "completionDate": "2026-09-30",
+          "deliveryDate": "2026-10-30",
+          "contractDeliveryDate": "2026-10-30",
+          "inspectionStartDate": "2026-08-30",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "2026-10-10",
+          "deliveryScope": "8#（精装竣备及交付）",
+          "progress": {
+            "indoor": 10,
+            "public": 5,
+            "facade": 100,
+            "outdoor": 100,
+            "basement": 100,
+            "slowBuildingNo": "8#",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 10,
+              "部品": 0,
+              "保温": 100,
+              "外墙涂料": 100
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-10-10",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 16:18:36",
+          "lastUpdateUser": "刘俊"
+        },
+        {
+          "id": "phase_1779242323794_qjdzz",
+          "name": "二期（10-14#楼）",
+          "area": "13.9",
+          "status": "停工",
+          "contractor": "广东松翔建设有限公司",
+          "deliveryStandard": "毛坯+精装",
+          "deliveryHouseholds": 942,
+          "completionDate": "2030-04-30",
+          "deliveryDate": "2030-09-30",
+          "contractDeliveryDate": "2030-10-30",
+          "inspectionStartDate": "2030-07-30",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "2030-09-10",
+          "deliveryScope": "10-14#",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "",
+          "lastUpdateUser": ""
+        }
+      ]
+    },
+    {
+      "id": "proj_1779326924389",
+      "name": "广州·西派天河序",
+      "company": "南沙",
+      "area": "14.4576",
+      "engineer": "陈国杰",
+      "type": "合作",
+      "partner": "招商",
+      "shareRatio": "51%",
+      "lines": "工程、设计、招采、报建、财务、运营、综合",
+      "phases": [
+        {
+          "id": "phase_1779327012479_09ckj",
+          "name": "首批次楼栋",
+          "area": "7.899591",
+          "status": "竣备待交付",
+          "contractor": "中铁十二局集团有限公司、中建四局华南建设有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 538,
+          "completionDate": "2025-12-29",
+          "deliveryDate": "2026-12-30",
+          "contractDeliveryDate": "2026-12-30",
+          "inspectionStartDate": "2026-05-15",
+          "openDayPlanDate": "2026-11-30",
+          "jointAssessmentPlanDate": "2026-11-30",
+          "deliveryScope": "1#、2#、3#、6#、7#、8#、10#、15#、16#",
+          "progress": {
+            "indoor": 75,
+            "public": 99,
+            "facade": 99,
+            "outdoor": 70,
+            "basement": 70,
+            "slowBuildingNo": "3#",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 70,
+              "部品": 50,
+              "保温": 100,
+              "外墙涂料": 100
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "已开展",
+              "remainingIssues": 2197
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-09-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-08-15",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/22 08:41:59",
+          "lastUpdateUser": "刘俊"
+        },
+        {
+          "id": "phase_1779327438791_o7h80",
+          "name": "二批次5#",
+          "area": "1.402601",
+          "status": "在建",
+          "contractor": "中铁十二局集团有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 56,
+          "completionDate": "2026-05-30",
+          "deliveryDate": "2026-12-30",
+          "contractDeliveryDate": "2026-12-30",
+          "inspectionStartDate": "2026-08-01",
+          "openDayPlanDate": "2026-11-30",
+          "jointAssessmentPlanDate": "2026-11-30",
+          "deliveryScope": "5#已售部分",
+          "progress": {
+            "indoor": 10,
+            "public": 100,
+            "facade": 100,
+            "outdoor": 70,
+            "basement": 70,
+            "slowBuildingNo": "5#",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 10,
+              "部品": 2,
+              "保温": 100,
+              "外墙涂料": 100
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-11-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-10-15",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 15:48:20",
+          "lastUpdateUser": "用户"
+        },
+        {
+          "id": "phase_1779327656277_3qkou",
+          "name": "二批次11#、12#",
+          "area": "1.131880",
+          "status": "在建",
+          "contractor": "中建四局华南建设有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 64,
+          "completionDate": "2026-09-30",
+          "deliveryDate": "2027-06-30",
+          "contractDeliveryDate": "2027-06-30",
+          "inspectionStartDate": "2027-02-01",
+          "openDayPlanDate": "2027-05-30",
+          "jointAssessmentPlanDate": "2027-05-30",
+          "deliveryScope": "11#、12#",
+          "progress": {
+            "indoor": 50,
+            "public": 80,
+            "facade": 100,
+            "outdoor": 30,
+            "basement": 70,
+            "slowBuildingNo": "11#",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 40,
+              "部品": 0,
+              "保温": 100,
+              "外墙涂料": 100
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2027-05-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2027-04-15",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 16:03:46",
+          "lastUpdateUser": "用户"
+        },
+        {
+          "id": "phase_1779329272819_mtj45",
+          "name": "三批次9#、13#",
+          "area": "1.131762",
+          "status": "在建",
+          "contractor": "中建四局华南建设有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 64,
+          "completionDate": "",
+          "deliveryDate": "",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "9#、13#（时间待定）",
+          "progress": {
+            "indoor": 10,
+            "public": 10,
+            "facade": 80,
+            "outdoor": 70,
+            "basement": 70,
+            "slowBuildingNo": "9#",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 5,
+              "部品": 0,
+              "保温": 100,
+              "外墙涂料": 100
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 16:05:16",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779326000778",
+      "name": "南沙·西派澜岸",
+      "company": "南沙",
+      "area": "23.29",
+      "engineer": "颜友清",
+      "type": "操盘",
+      "landDate": "2022-03-18",
+      "openDate": "2022-12-17",
+      "phases": [
+        {
+          "id": "phase_1779326039592_l744o",
+          "name": "西区-7号楼",
+          "area": "15119",
+          "status": "在建",
+          "contractor": "中铁建设",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 122,
+          "completionDate": "2026-06-30",
+          "deliveryDate": "2026-09-30",
+          "contractDeliveryDate": "2026-09-30",
+          "inspectionStartDate": "2026-04-15",
+          "openDayPlanDate": "2026-08-30",
+          "jointAssessmentPlanDate": "2026-08-30",
+          "deliveryScope": "7号楼",
+          "progress": {
+            "indoor": 100,
+            "public": 100,
+            "facade": 98,
+            "outdoor": 95,
+            "basement": 95,
+            "slowBuildingNo": "7#（32层）",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 100,
+              "部品": 100,
+              "保温": 100,
+              "外墙涂料": 98
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "已开展",
+              "remainingIssues": 1765
+            },
+            "round2": {
+              "status": "已开展",
+              "remainingIssues": 3393
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-08-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-08-15",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 16:42:44",
+          "lastUpdateUser": "刘俊"
+        },
+        {
+          "id": "phase_1779347730514_hy34s",
+          "name": "东区-1~4号楼",
+          "area": "6.1",
+          "status": "已移交物业",
+          "contractor": "中铁建设",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 429,
+          "completionDate": "2024-12-30",
+          "deliveryDate": "2025-12-30",
+          "contractDeliveryDate": "2025-12-30",
+          "inspectionStartDate": "2025-03-15",
+          "openDayPlanDate": "2025-11-15",
+          "jointAssessmentPlanDate": "2025-11-30",
+          "deliveryScope": "东区1~4号楼及负一层地下室",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 0,
+            "slowBuildingNo": "",
+            "slowProgress": {}
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 15:24:33",
+          "lastUpdateUser": "用户"
+        },
+        {
+          "id": "phase_1779348417734_qm1pu",
+          "name": "西区-6号楼",
+          "area": "1.77",
+          "status": "在建",
+          "contractor": "中铁建设",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 132,
+          "completionDate": "2026-10-30",
+          "deliveryDate": "2027-01-10",
+          "contractDeliveryDate": "2027-01-10",
+          "inspectionStartDate": "2026-08-10",
+          "openDayPlanDate": "2026-12-10",
+          "jointAssessmentPlanDate": "2026-12-10",
+          "deliveryScope": "6号楼",
+          "progress": {
+            "indoor": 20,
+            "public": 10,
+            "facade": 30,
+            "outdoor": 90,
+            "basement": 90,
+            "slowBuildingNo": "6#（47层）",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 20,
+              "部品": 0,
+              "保温": 100,
+              "外墙涂料": 30
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-12-10",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-11-25",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 15:33:39",
+          "lastUpdateUser": "用户"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779258479376",
+      "name": "南沙·西派尊府",
+      "company": "南沙",
+      "area": "45.8",
+      "engineer": "陈大正",
+      "type": "操盘",
+      "landDate": "2022-06-14",
+      "openDate": "2024-04-30",
+      "phases": [
+        {
+          "id": "phase_1779258501251_uj4ww",
+          "name": "一标段（1#、2#）",
+          "area": "3.14",
+          "status": "竣备待交付",
+          "contractor": "中铁城建集团有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 100,
+          "completionDate": "2025-12-23",
+          "deliveryDate": "2026-12-31",
+          "contractDeliveryDate": "2026-12-31",
+          "inspectionStartDate": "2026-06-01",
+          "openDayPlanDate": "2026-11-30",
+          "jointAssessmentPlanDate": "2026-11-30",
+          "deliveryScope": "1#、2#",
+          "progress": {
+            "indoor": 90,
+            "public": 90,
+            "facade": 100,
+            "outdoor": 100,
+            "basement": 100,
+            "slowBuildingNo": "1#",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 85,
+              "部品": 85,
+              "保温": 100,
+              "外墙涂料": 100
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-11-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-11-30",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/22 08:49:31",
+          "lastUpdateUser": "刘俊"
+        },
+        {
+          "id": "phase_1779259398819_t0f0i",
+          "name": "一标段（3#）",
+          "area": "1.49",
+          "status": "在建",
+          "contractor": "中铁城建集团有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 50,
+          "completionDate": "2026-12-31",
+          "deliveryDate": "2027-12-31",
+          "contractDeliveryDate": "2027-12-31",
+          "inspectionStartDate": "2027-06-01",
+          "openDayPlanDate": "2027-11-30",
+          "jointAssessmentPlanDate": "2027-11-30",
+          "deliveryScope": "3#",
+          "progress": {
+            "indoor": 5,
+            "public": 5,
+            "facade": 35,
+            "outdoor": 30,
+            "basement": 40,
+            "slowBuildingNo": "3#",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 90,
+              "抹灰": 90,
+              "精装": 5,
+              "部品": 2,
+              "保温": 0,
+              "外墙涂料": 10
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2027-11-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2027-11-30",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/22 08:49:42",
+          "lastUpdateUser": "刘俊"
+        },
+        {
+          "id": "phase_1779262484906_z8opu",
+          "name": "一标段（6#、7#）",
+          "area": "2.74",
+          "status": "在建",
+          "contractor": "中铁城建集团有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 180,
+          "completionDate": "2026-12-31",
+          "deliveryDate": "2027-06-30",
+          "contractDeliveryDate": "2027-06-30",
+          "inspectionStartDate": "2027-01-01",
+          "openDayPlanDate": "2027-05-31",
+          "jointAssessmentPlanDate": "2027-05-31",
+          "deliveryScope": "",
+          "progress": {
+            "indoor": 2,
+            "public": 2,
+            "facade": 50,
+            "outdoor": 20,
+            "basement": 90,
+            "slowBuildingNo": "7#",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 90,
+              "抹灰": 90,
+              "精装": 2,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 10
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2027-05-31",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2027-05-31",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/22 08:49:49",
+          "lastUpdateUser": "刘俊"
+        },
+        {
+          "id": "phase_1779327890716_k9hiz",
+          "name": "一标段（4#、5#）",
+          "area": "3.4",
+          "status": "停工",
+          "contractor": "中铁城建集团有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 180,
+          "completionDate": "2028-12-31",
+          "deliveryDate": "2029-12-30",
+          "contractDeliveryDate": "2029-12-30",
+          "inspectionStartDate": "2029-06-01",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 40,
+            "slowBuildingNo": "",
+            "slowProgress": {
+              "砼": 0,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 09:52:51",
+          "lastUpdateUser": "御瀚台"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779341772669",
+      "name": "花都·汽车城代建",
+      "company": "南沙",
+      "area": "19.3",
+      "engineer": "邹存辉",
+      "type": "代建",
+      "owner": "广州翰城房地产开发有限公司",
+      "landDate": "",
+      "bidDate": "2026-03-26",
+      "agentLines": "",
+      "brandOutput": "是",
+      "phases": [
+        {
+          "id": "phase_1779341709493_vs3oq",
+          "name": "30地块",
+          "area": "6.7",
+          "status": "在建",
+          "contractor": "中铁建设集团邮箱公司、中铁建设集团南方工程有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 560,
+          "completionDate": "2029-03-30",
+          "deliveryDate": "",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 10,
+            "slowBuildingNo": "",
+            "slowProgress": {
+              "砼": 0,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 16:32:50",
+          "lastUpdateUser": "刘俊"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779325178554",
+      "name": "南沙·花语上城",
+      "company": "南沙",
+      "area": "12.6",
+      "engineer": "沈山川",
+      "type": "操盘",
+      "landDate": "2023-12-28",
+      "openDate": "2024-07-27",
+      "phases": [
+        {
+          "id": "phase_1779325171905_zu9jl",
+          "name": "一期（1、2、6#楼）",
+          "area": "8",
+          "status": "在建",
+          "contractor": "中国土木工程集团有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 260,
+          "completionDate": "2026-06-30",
+          "deliveryDate": "2026-08-30",
+          "contractDeliveryDate": "2026-08-30",
+          "inspectionStartDate": "2026-04-05",
+          "openDayPlanDate": "2026-07-30",
+          "jointAssessmentPlanDate": "2026-07-30",
+          "deliveryScope": "1、2、6号楼",
+          "progress": {
+            "indoor": 99,
+            "public": 99,
+            "facade": 100,
+            "outdoor": 95,
+            "basement": 95,
+            "slowBuildingNo": "6#（18F）",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 99,
+              "部品": 99,
+              "保温": 100,
+              "外墙涂料": 100
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "已开展",
+              "remainingIssues": 1835
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-07-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-07-30",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/22 08:55:40",
+          "lastUpdateUser": "刘俊"
+        },
+        {
+          "id": "phase_1779352961297_fg00o",
+          "name": "二期（7#楼）",
+          "area": "1.1",
+          "status": "在建",
+          "contractor": "中国土木工程集团有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 85,
+          "completionDate": "2026-10-30",
+          "deliveryDate": "2026-12-30",
+          "contractDeliveryDate": "2026-12-30",
+          "inspectionStartDate": "2026-08-01",
+          "openDayPlanDate": "2026-11-30",
+          "jointAssessmentPlanDate": "2026-11-30",
+          "deliveryScope": "7号楼",
+          "progress": {
+            "indoor": 80,
+            "public": 80,
+            "facade": 100,
+            "outdoor": 80,
+            "basement": 95,
+            "slowBuildingNo": "7#（18F）",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 100,
+              "抹灰": 100,
+              "精装": 80,
+              "部品": 80,
+              "保温": 100,
+              "外墙涂料": 100
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2026-11-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2026-11-30",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/22 08:55:50",
+          "lastUpdateUser": "刘俊"
+        },
+        {
+          "id": "phase_1779353059089_o9bem",
+          "name": "三期（3-5#楼）",
+          "area": "3.5",
+          "status": "在建",
+          "contractor": "中国土木工程集团有限公司",
+          "deliveryStandard": "精装",
+          "deliveryHouseholds": 257,
+          "completionDate": "2027-08-30",
+          "deliveryDate": "2027-10-30",
+          "contractDeliveryDate": "2027-10-30",
+          "inspectionStartDate": "2027-07-01",
+          "openDayPlanDate": "2027-09-30",
+          "jointAssessmentPlanDate": "2027-09-30",
+          "deliveryScope": "3、4、5号楼",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 95,
+            "slowBuildingNo": "4#(18F)",
+            "slowProgress": {
+              "砼": 100,
+              "砌体": 70,
+              "抹灰": 60,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "2027-09-30",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "2027-09-30",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 16:49:21",
+          "lastUpdateUser": "坦尾旧改"
+        }
+      ]
+    },
+    {
+      "id": "proj_1779353463607",
+      "name": "南沙·花语锦府",
+      "company": "南沙",
+      "area": "3.4",
+      "engineer": "沈山川",
+      "type": "操盘",
+      "landDate": "2023-12-28",
+      "openDate": "2026-09-30",
+      "phases": [
+        {
+          "id": "phase_1779353500905_1pmmu",
+          "name": "一期",
+          "area": "3.4",
+          "status": "在建",
+          "contractor": "中铁十二局集团有限公司",
+          "deliveryStandard": "毛坯",
+          "deliveryHouseholds": 188,
+          "completionDate": "",
+          "deliveryDate": "",
+          "contractDeliveryDate": "",
+          "inspectionStartDate": "",
+          "openDayPlanDate": "",
+          "jointAssessmentPlanDate": "",
+          "deliveryScope": "",
+          "progress": {
+            "indoor": 0,
+            "public": 0,
+            "facade": 0,
+            "outdoor": 0,
+            "basement": 50,
+            "slowBuildingNo": "5#（12F）",
+            "slowProgress": {
+              "砼": 0,
+              "砌体": 0,
+              "抹灰": 0,
+              "精装": 0,
+              "部品": 0,
+              "保温": 0,
+              "外墙涂料": 0
+            }
+          },
+          "qualityChecks": [],
+          "acceptanceChecks": {
+            "round1": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round2": {
+              "status": "未开展",
+              "remainingIssues": 0
+            },
+            "round3": {
+              "status": "未开展",
+              "remainingIssues": 0
+            }
+          },
+          "openDay": {
+            "status": "未开展",
+            "actualDate": "",
+            "guests": 0,
+            "photos": []
+          },
+          "jointAssessment": {
+            "status": "未开展",
+            "actualDate": "",
+            "photos": []
+          },
+          "twoOne": {
+            "indicator1": "",
+            "indicator2": "",
+            "attachment": []
+          },
+          "lastUpdateTime": "2026/5/21 16:54:18",
+          "lastUpdateUser": "坦尾旧改"
+        }
+      ]
+    }
+  ],
+  "exportTime": "2026-05-28T20:50:52.822Z",
+  "user": "用户",
+  "version": "1.0"
+}
