@@ -3450,15 +3450,14 @@
 
         function selectInspCompany(c) { window._inspSelectedCompany = c || null; refreshInspTab(); }
         function addInspPerson(company) {
-            const container = document.querySelectorAll('[class*="insp_name_' + company + '"]');
-            const count = container.length;
             const rows = document.querySelectorAll('.insp_name_' + company);
-            const lastRow = rows[rows.length - 1]?.parentElement?.parentElement;
-            if (lastRow) {
-                const newRow = lastRow.insertRow();
-                const levels = ['区域','项目组'], specialties = ['土建','精装','机电','园林'], roles = ['组长','组员'];
-                newRow.innerHTML = '<td><select class="insp_role_' + company + '" style="width:100%;font-size:0.78em;">' + roles.map(r => '<option>' + r + '</option>').join('') + '</select></td><td><input class="insp_name_' + company + '" value="" style="width:100%;font-size:0.82em;"></td><td><select class="insp_level_' + company + '" style="width:100%;font-size:0.78em;">' + levels.map(l => '<option>' + l + '</option>').join('') + '</select></td><td><select class="insp_specialty_' + company + '" style="width:100%;font-size:0.78em;">' + specialties.map(s => '<option>' + s + '</option>').join('') + '</select></td><td><button class="btn btn-sm btn-danger" onclick="this.parentElement.parentElement.remove()">×</button></td>';
-            }
+            if (rows.length === 0) return;
+            const lastRow = rows[rows.length - 1].closest('tr');
+            const tbody = lastRow?.parentElement;
+            if (!tbody || tbody.tagName !== 'TBODY') return;
+            const newRow = tbody.insertRow();
+            const levels = ['区域','项目组'], specialties = ['土建','精装','机电','园林'], roles = ['组长','组员'];
+            newRow.innerHTML = '<td><select class="insp_role_' + company + '" style="width:100%;font-size:0.78em;">' + roles.map(r => '<option>' + r + '</option>').join('') + '</select></td><td><input class="insp_name_' + company + '" value="" style="width:100%;font-size:0.82em;"></td><td><select class="insp_level_' + company + '" style="width:100%;font-size:0.78em;">' + levels.map(l => '<option>' + l + '</option>').join('') + '</select></td><td><select class="insp_specialty_' + company + '" style="width:100%;font-size:0.78em;">' + specialties.map(s => '<option>' + s + '</option>').join('') + '</select></td><td><button class="btn btn-sm btn-danger" onclick="this.parentElement.parentElement.remove()">x</button></td>';
         }
         function saveAllInspectionTeams() {
             const teams = loadTeamData();
@@ -3821,12 +3820,11 @@
 
         function executeClean() {
             const checkedCompanies = [];
-            document.querySelectorAll('.clean-company-cb:checked').forEach(el => checkedCompanies.push(el.value));
+            document.querySelectorAll('#cleanCompanyChecks > div > label > input[type=checkbox]:checked').forEach(el => checkedCompanies.push(el.value));
             const checkedProjects = [];
             checkedCompanies.forEach(c => { document.querySelectorAll('.clean-proj-' + c + ':checked').forEach(el => checkedProjects.push(el.value)); });
-            const checked = checkedProjects.length > 0 ? checkedCompanies : checkedCompanies; // always use company list
             const hasSub = checkedProjects.length > 0;
-            if (checked.length === 0) { showToast('请至少选择一个公司'); return; }
+            if (checkedCompanies.length === 0) { showToast('请至少选择一个公司'); return; }
             const cleanType = document.querySelector('input[name="cleanType"]:checked')?.value || 'projects';
             const typeNames = { projects: '项目数据', monthly: '月度信息反馈', inspection: '质检小组信息', all: '全部数据' };
             if (confirm(`确定清理以下公司的${typeNames[cleanType]}吗？\n${checkedCompanies.join('、')}\n此操作不可恢复！`)) {
