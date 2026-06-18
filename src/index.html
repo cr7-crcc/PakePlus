@@ -937,25 +937,14 @@
         // ==================== 首页仪表盘 ====================
         function renderDashboard() {
             let html = '';
-            // 预警汇总
-            const warnings = collectWarnings();
-            if (warnings.length > 0) {
-                html += '<div class="card" style="padding:12px 20px;margin-bottom:12px;background:#fffbf0;border-left:4px solid #e74c3c;">';
-                html += '<strong style="color:#c0392b;">⚠️ 预警提醒</strong> ';
-                warnings.forEach(w => {
-                    html +=
-                        `<span class="tag ${w.level==='red'?'tag-red':'tag-yellow'}" style="margin:2px 4px;"><span class="warning-dot ${w.level}"></span>${w.msg}</span>`;
-                });
-                html += '</div>';
-            }
             // 图表区 — 2列网格
             html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">';
-            // 图表1: 各项目状态分布（标段数）
-            html += '<div class="card" style="padding:14px;"><div style="font-weight:700;font-size:0.85em;color:var(--primary);margin-bottom:8px;">📊 各项目状态分布（标段、批次数量）</div><canvas id="chartStatusDist"></canvas></div>';
-            // 图表1b: 各项目状态分布（面积）
-            html += '<div class="card" style="padding:14px;"><div style="font-weight:700;font-size:0.85em;color:var(--primary);margin-bottom:8px;">📊 各项目状态分布（面积）</div><canvas id="chartStatusArea"></canvas></div>';
-            // 图表2: 各公司项目类型数量
+            // 图表1: 各公司项目类型数量
             html += '<div class="card" style="padding:14px;"><div style="font-weight:700;font-size:0.85em;color:var(--primary);margin-bottom:8px;">📊 各公司项目类型数量</div><canvas id="chartTypeCount"></canvas></div>';
+            // 图表2: 各项目状态分布（标段数）
+            html += '<div class="card" style="padding:14px;"><div style="font-weight:700;font-size:0.85em;color:var(--primary);margin-bottom:8px;">📊 各项目状态分布（标段、批次数量）</div><canvas id="chartStatusDist"></canvas></div>';
+            // 图表2b: 各项目状态分布（面积）
+            html += '<div class="card" style="padding:14px;"><div style="font-weight:700;font-size:0.85em;color:var(--primary);margin-bottom:8px;">📊 各项目状态分布（面积）</div><canvas id="chartStatusArea"></canvas></div>';
             // 图表3: 各公司面积统计
             html += '<div class="card" style="padding:14px;"><div style="font-weight:700;font-size:0.85em;color:var(--primary);margin-bottom:8px;">📊 各公司面积统计(万m²)</div><canvas id="chartAreaStats"></canvas></div>';
             // 图表4: 每年竣备交付
@@ -2804,15 +2793,17 @@
             html += '<div class="form-group"><label>选择月份</label><input type="month" id="summaryYM" value="' + selYM + '" onchange="refreshSummaryTab()" style="width:150px;"></div>';
             // 交付年份选择
             const thisYear = new Date().getFullYear();
-            const summarySelYear = document.getElementById('summaryYear')?.value || thisYear;
+            const summarySelYear = window._summaryActiveYear || thisYear;
             const allYears = new Set();
             _projects.forEach(p => { (p.phases || []).forEach(ph => { if (ph.deliveryTime) allYears.add(parseInt(ph.deliveryTime.substring(0,4))); }); });
-            const summaryYears = [...allYears].sort();
-            if (!summaryYears.includes(thisYear)) summaryYears.push(thisYear);
+            const summaryYears = [...allYears].filter(y => y >= 2026).sort();
+            if (!summaryYears.includes(thisYear) && thisYear >= 2026) summaryYears.push(thisYear);
             summaryYears.sort();
-            html += '<div class="form-group"><label>交付年份</label><select id="summaryYear" onchange="refreshSummaryTab()" style="width:100px;">';
-            summaryYears.forEach(y => { html += '<option value="' + y + '" ' + (y == summarySelYear ? 'selected' : '') + '>' + y + '年</option>'; });
-            html += '</select></div></div>';
+            html += '<div class="form-group"><label>交付年份</label><div style="display:inline-flex;gap:3px;flex-wrap:wrap;" id="summaryYearTabs">';
+            summaryYears.forEach(y => {
+                html += '<span style="cursor:pointer;padding:2px 10px;border-radius:10px;font-size:0.72em;font-weight:500;transition:all 0.15s;' + (y == summarySelYear ? 'background:#3498db;color:#fff;' : 'background:#eee;color:#888;') + 'border:1px solid ' + (y == summarySelYear ? '#3498db' : '#ddd') + ';" onclick="switchSummaryYear(this,' + y + ')">' + y + '</span>';
+            });
+            html += '</div></div></div>';
             html += '</div>';
 
             const selYear = parseInt(summarySelYear);
@@ -2878,20 +2869,9 @@
 
             // 图表 — 实测实量得分 + 承接查验
             html += '<div style="margin-top:12px;">';
-            // 实测实量得分（公司切换TAB）
-            html += '<div class="card" style="padding:12px;margin-bottom:12px;"><div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px;">';
-            html += '<span style="font-weight:700;font-size:0.85em;color:var(--primary);">📊 各公司在建项目当月实测实量得分</span>';
-            html += '<div style="display:inline-flex;gap:3px;flex-wrap:wrap;" id="summaryScoreTabs">';
-            COMPANIES.forEach((c, i) => {
-                const cProjs = filterProjects.filter(p => p.company === c);
-                if (cProjs.length === 0) return;
-                html += '<span style="cursor:pointer;padding:2px 10px;border-radius:10px;font-size:0.72em;font-weight:500;transition:all 0.15s;' + (i === 0 ? 'background:#3498db;color:#fff;' : 'background:#eee;color:#888;') + 'border:1px solid ' + (i === 0 ? '#3498db' : '#ddd') + ';" onclick="switchSummaryScoreCompany(this,\'' + c + '\')" data-company="' + c + '">' + c + '</span>';
-            });
-            html += '</div></div>';
-            html += '<div style="min-height:300px;"><canvas id="chartSummaryScore"></canvas></div></div>';
             // 进度得分（公司切换TAB）
             html += '<div class="card" style="padding:12px;margin-bottom:12px;"><div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px;">';
-            html += '<span style="font-weight:700;font-size:0.85em;color:var(--primary);">📊 各公司在建项目当月进度得分</span>';
+            html += '<span style="font-weight:700;font-size:0.85em;color:var(--primary);">📊 在建项目进度概况</span>';
             html += '<div style="display:inline-flex;gap:3px;flex-wrap:wrap;" id="summaryProgressTabs">';
             COMPANIES.forEach((c, i) => {
                 const cProjs = filterProjects.filter(p => p.company === c);
@@ -2900,8 +2880,70 @@
             });
             html += '</div></div>';
             html += '<div style="min-height:300px;"><canvas id="chartSummaryProgress"></canvas></div></div>';
+            // 实测实量得分（公司切换TAB）
+            html += '<div class="card" style="padding:12px;margin-bottom:12px;"><div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px;">';
+            html += '<span style="font-weight:700;font-size:0.85em;color:var(--primary);">📊 在建项目实测实量</span>';
+            html += '<div style="display:inline-flex;gap:3px;flex-wrap:wrap;" id="summaryScoreTabs">';
+            COMPANIES.forEach((c, i) => {
+                const cProjs = filterProjects.filter(p => p.company === c);
+                if (cProjs.length === 0) return;
+                html += '<span style="cursor:pointer;padding:2px 10px;border-radius:10px;font-size:0.72em;font-weight:500;transition:all 0.15s;' + (i === 0 ? 'background:#3498db;color:#fff;' : 'background:#eee;color:#888;') + 'border:1px solid ' + (i === 0 ? '#3498db' : '#ddd') + ';" onclick="switchSummaryScoreCompany(this,\'' + c + '\')" data-company="' + c + '">' + c + '</span>';
+            });
+            html += '</div></div>';
+            html += '<div style="min-height:300px;"><canvas id="chartSummaryScore"></canvas></div></div>';
             // 承接查验
-            html += '<div class="card" style="padding:12px;"><div style="font-weight:700;font-size:0.85em;color:var(--primary);margin-bottom:8px;">📊 ' + selYear + '年交付项目承接查验剩余问题户均条数（按标段）</div><div style="min-height:300px;"><canvas id="chartSummaryAcceptance"></canvas></div></div>';
+            html += '<div class="card" style="padding:12px;"><div style="font-weight:700;font-size:0.85em;color:var(--primary);margin-bottom:8px;">📊 交付项目承接查验</div><div style="min-height:300px;"><canvas id="chartSummaryAcceptance"></canvas></div></div>';
+            // 未启动承接查验的标段清单
+            const nowDate = new Date(); const nowStr = nowDate.toISOString().split('T')[0];
+            const unstarted = [];
+            filterProjects.forEach(p => {
+                (p.phases||[]).forEach(ph => {
+                    const dtYear2 = ph.deliveryTime ? parseInt(ph.deliveryTime.substring(0,4)) : null;
+                    if (dtYear2 !== selYear) return;
+                    const fb = ph.monthlyFeedbacks?.[selYM];
+                    const crData = fb?.threeFourCheck?.inspectionRoundsData || [];
+                    const hasStarted = crData.some(r => r.conducted);
+                    if (hasStarted) return;
+                    const delDate = ph.deliveryTime || '';
+                    const theoryCR = delDate ? (()=>{const d=new Date(delDate);d.setMonth(d.getMonth()-4);return d.toISOString().split('T')[0]})() : '';
+                    const planCR = ph.inspectionStartTime || '';
+                    const diffDel = delDate ? Math.ceil((new Date(delDate)-nowDate)/(86400000)) : null;
+                    const diffTheory = theoryCR ? Math.ceil((new Date(theoryCR)-nowDate)/(86400000)) : null;
+                    const diffPlan = planCR ? Math.ceil((new Date(planCR)-nowDate)/(86400000)) : null;
+                    unstarted.push({company:p.company,projName:p.name,phaseName:ph.name,delDate,theoryCR,planCR,diffDel,diffTheory,diffPlan});
+                });
+            });
+            if (unstarted.length > 0) {
+                // 按公司分组，再按项目合并
+                const usByCompany = {};
+                unstarted.forEach(u => { if(!usByCompany[u.company]) usByCompany[u.company]=[]; usByCompany[u.company].push(u); });
+                let usIdx = 0;
+                html += '<div class="card" style="padding:12px;margin-top:8px;"><div style="font-weight:700;font-size:0.85em;color:#c0392b;margin-bottom:8px;">⚠ 未启动承接查验的交付标段 (' + selYear + '年)</div>';
+                html += '<table style="table-layout:fixed;"><thead><tr><th style="width:3%;">/</th><th style="width:7%;">公司</th><th style="width:22%;">项目</th><th style="width:8%;">标段</th><th style="width:10%;">交付时间</th><th style="width:10%;">承查理论<br>(前4月)</th><th style="width:9%;">计划承查</th><th style="width:7%;">距交付</th><th style="width:7%;">距承查理论</th><th style="width:7%;">距承查计划</th></tr></thead><tbody>';
+                let compFirst = true;
+                Object.entries(usByCompany).sort((a,b)=>COMPANIES.indexOf(a[0])-COMPANIES.indexOf(b[0])).forEach(([c,items])=>{
+                    const byProj = {};
+                    items.forEach(u => { if(!byProj[u.projName]) byProj[u.projName]=[]; byProj[u.projName].push(u); });
+                    const compTotal = items.length;
+                    let projFirst = true;
+                    Object.entries(byProj).forEach(([pname,phases])=>{
+                        phases.forEach((u,phi)=>{
+                            usIdx++;
+                            html += '<tr>';
+                            html += '<td style="text-align:center;color:#999;">'+usIdx+'</td>';
+                            if (phi === 0 && projFirst) { projFirst = false; html += '<td rowspan="'+compTotal+'" style="vertical-align:middle;font-size:0.82em;">'+c+'</td>'; }
+                            if (phi === 0) html += '<td rowspan="'+phases.length+'" style="vertical-align:middle;font-size:0.82em;">'+pname+'</td>';
+                            html += '<td style="font-size:0.8em;">'+u.phaseName+'</td>';
+                            html += '<td style="font-size:0.78em;">'+u.delDate+'</td><td style="font-size:0.78em;">'+u.theoryCR+'</td><td style="font-size:0.78em;">'+u.planCR+'</td>';
+                            html += '<td style="font-size:0.78em;color:'+(u.diffDel<0?'#c0392b':u.diffDel<30?'#f39c12':'')+';">'+(u.diffDel!==null?u.diffDel+'d':'')+'</td>';
+                            html += '<td style="font-size:0.78em;color:'+(u.diffTheory<0?'#c0392b':u.diffTheory<30?'#f39c12':'')+';">'+(u.diffTheory!==null?u.diffTheory+'d':'')+'</td>';
+                            html += '<td style="font-size:0.78em;color:'+(u.diffPlan<0?'#c0392b':u.diffPlan<30?'#f39c12':'')+';">'+(u.diffPlan!==null?u.diffPlan+'d':'')+'</td>';
+                            html += '</tr>';
+                        });
+                    });
+                });
+                html += '</tbody></table></div>';
+            }
             html += '</div>';
 
             html += '</div></div></div>';
@@ -3018,6 +3060,16 @@
             if (canvas && window._summaryProgressData && window._summaryProgressColors) {
                 renderSummaryProgressChart(canvas, window._summaryProgressData, company, window._summaryProgressColors);
             }
+        }
+
+        function switchSummaryYear(el, year) {
+            const parent = document.getElementById('summaryYearTabs');
+            parent.querySelectorAll('span').forEach(s => {
+                s.style.background = '#eee'; s.style.color = '#888'; s.style.borderColor = '#ddd';
+            });
+            el.style.background = '#3498db'; el.style.color = '#fff'; el.style.borderColor = '#3498db';
+            window._summaryActiveYear = parseInt(year);
+            refreshSummaryTab();
         }
 
         function switchSummaryScoreCompany(el, company) {
@@ -3392,7 +3444,6 @@
                     });
                 });
             });
-            html += '</tbody></table>';
             html += '</tbody></table></div></div></div>';
             return html;
         }
@@ -3766,15 +3817,6 @@
                     }).join('') + '</div>';
                 container.insertAdjacentHTML('afterend', typeHTML);
             document.getElementById('cleanModal').style.display = 'flex';
-        }
-
-        function toggleCleanCompany(cb) {
-            const div = document.querySelector('.clean-projects[data-company="' + cb.value + '"]');
-            if (div) div.style.display = cb.checked ? 'block' : 'none';
-            // uncheck all projects when company is unchecked
-            if (!cb.checked) {
-                document.querySelectorAll('.clean-proj-' + cb.value).forEach(el => el.checked = false);
-            }
         }
 
         function executeClean() {
