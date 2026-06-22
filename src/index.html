@@ -1422,16 +1422,16 @@
                 if (cProjs.length === 0) return;
                 const hasActive = cProjs.some(p => p.id === window._projectsSelectedPid);
                 html += '<div class="sidebar-company">';
-                html += `<div class="sidebar-company-header" onclick="toggleSidebarCompany(this)">`;
+                const isCompanyActive = window._projectsSelectedCompany === c;
+                html += `<div class="sidebar-company-header" style="cursor:pointer;${isCompanyActive?'background:#eef4fb;':''}" onclick="selectProjectsCompany('${c}')">`;
                 html += `<span>🏢 ${c} <span style="font-size:0.8em;color:#999;">(${cProjs.length})</span></span>`;
-                html += `<span class="arrow${hasActive ? ' open' : ''}">▶</span>`;
+                html += `<span class="arrow${hasActive || isCompanyActive ? ' open' : ''}" onclick="event.stopPropagation();toggleSidebarCompany(this.parentElement)" style="cursor:pointer;">▶</span>`;
                 html += '</div>';
-                html += `<div class="sidebar-company-projects${hasActive ? ' open' : ''}">`;
+                html += `<div class="sidebar-company-projects${hasActive || isCompanyActive ? ' open' : ''}">`;
                 cProjs.forEach(p => {
-                    const isActive = p.id === window._projectsSelectedPid;
-                    const phaseCount = (p.phases || []).length;
+                    const isActive = p.id === window._projectsSelectedPid && !isCompanyActive;
                     html += `<div class="sidebar-project${isActive ? ' active' : ''}" onclick="selectProjectsProject('${p.id}')">`;
-                    html += `<span>${p.name}</span><span class="badge">${phaseCount}标段</span>`;
+                    html += `<span>${p.name}</span><span class="badge">${p.type}</span>`;
                     html += '</div>';
                 });
                 html += '</div></div>';
@@ -1440,65 +1440,53 @@
 
             // ===== 右侧内容区 =====
             html += '<div class="sidebar-content">';
+            const selCompany = window._projectsSelectedCompany;
             const selProj = _projects.find(p => p.id === window._projectsSelectedPid);
-            if (selProj) {
+
+            // 公司层级视图 — 显示该公司所有标段
+            if (selCompany && !selProj) {
+                const cProjs = _projects.filter(p => p.company === selCompany);
+                html += '<div class="card"><h3>📍 ' + selCompany + ' — 全部标段</h3>';
+                html += '<table><thead><tr><th>项目</th><th>标段</th><th>面积(万m²)</th><th>类型</th><th>状态</th><th>施工总承包</th><th>交付标准</th><th>交付户数</th><th>竣备时间</th><th>交付时间</th></tr></thead><tbody>';
+                cProjs.forEach(p => {
+                    (p.phases||[]).forEach((ph, phi) => {
+                        html += '<tr>';
+                        if (phi === 0) html += '<td rowspan="'+(p.phases||[]).length+'" style="vertical-align:middle;">'+p.name+'</td>';
+                        html += '<td>'+ph.name+'</td><td>'+ (ph.area||'') +'</td><td><span class="tag '+(p.type==='操盘'?'tag-green':p.type==='合作'?'tag-pink':'tag-yellow')+'">'+p.type+'</span></td>';
+                        html += '<td><span class="tag '+(ph.status==='在建'?'tag-blue':ph.status==='竣备待交付'?'tag-yellow':ph.status==='停工'?'tag-red':ph.status==='集中交付期内'?'tag-teal':ph.status==='已移交物业'?'tag-green':'tag-gray')+'">'+ph.status+'</span></td>';
+                        html += '<td>'+ (ph.contractor||'') +'</td><td>'+ (ph.deliveryStandard||'') +'</td><td>'+ (ph.deliveryUnits||'') +'</td>';
+                        html += '<td>'+formatDate(ph.completionTime)+'</td><td>'+formatDate(ph.deliveryTime)+'</td>';
+                        html += '</tr>';
+                    });
+                });
+                html += '</tbody></table></div>';
+            }
+            // 项目层级视图
+            else if (selProj) {
                 html += '<div class="card">';
                 html += '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">';
-                html += `<h3 style="margin:0;border:none;padding:0;">📍 ${selProj.company} · ${selProj.name}</h3>`;
+                html += '<h3 style="margin:0;border:none;padding:0;">📍 ' + selProj.company + ' · ' + selProj.name + '</h3>';
                 html += '<div class="flex-row">';
-                html += `<button class="btn btn-sm btn-primary" onclick="editProject('${selProj.id}')">✏️ 编辑</button>`;
-                html += `<button class="btn btn-sm btn-danger" onclick="deleteProject('${selProj.id}')">🗑️ 删除</button>`;
+                html += '<button class="btn btn-sm btn-primary" onclick="editProject(\'' + selProj.id + '\')">✏️ 编辑</button>';
+                html += '<button class="btn btn-sm btn-danger" onclick="deleteProject(\'' + selProj.id + '\')">🗑️ 删除</button>';
                 html += '</div></div>';
-
-                // 项目基本信息
                 html += '<div class="form-grid" style="margin-top:12px;">';
-                html += `<div class="form-group"><label>项目类型</label><span class="tag ${selProj.type==='操盘'?'tag-green':selProj.type==='合作'?'tag-pink':'tag-yellow'}">${selProj.type}</span></div>`;
-                html += `<div class="form-group"><label>面积(万m²)</label><span>${selProj.area||'-'}</span></div>`;
-                html += `<div class="form-group"><label>工程负责人</label><span>${selProj.负责人||'-'}</span></div>`;
-                if (selProj.type === '操盘' || selProj.type === '代建') {
-                    html += `<div class="form-group"><label>土地获取时间</label><span>${selProj.landAcquisitionTime||'-'}</span></div>`;
-                }
-                if (selProj.type === '操盘') {
-                    html += `<div class="form-group"><label>开盘时间</label><span>${selProj.openingTime||'-'}</span></div>`;
-                }
-                if (selProj.type === '合作') {
-                    html += `<div class="form-group"><label>合作方</label><span>${selProj.partner||'-'}</span></div>`;
-                    html += `<div class="form-group"><label>我司股比</label><span>${selProj.shareRatio||'-'}</span></div>`;
-                    html += `<div class="form-group"><label>我司条线</label><span>${selProj.ourLines||'-'}</span></div>`;
-                }
-                if (selProj.type === '代建') {
-                    html += `<div class="form-group"><label>业主方</label><span>${selProj.owner||'-'}</span></div>`;
-                    html += `<div class="form-group"><label>代建中标时间</label><span>${selProj.bidWinTime||'-'}</span></div>`;
-                    html += `<div class="form-group"><label>代建条线</label><span>${selProj.agentLines||'-'}</span></div>`;
-                    html += `<div class="form-group"><label>品牌输出</label><span>${selProj.brandOutput||'-'}</span></div>`;
-                }
-                if (selProj._importInfo) {
-                    html += `<div class="form-group"><label>导入信息</label><span class="text-sm">${selProj._importInfo}</span></div>`;
-                }
+                html += '<div class="form-group"><label>项目类型</label><span class="tag '+(selProj.type==='操盘'?'tag-green':selProj.type==='合作'?'tag-pink':'tag-yellow')+'">'+selProj.type+'</span></div>';
+                html += '<div class="form-group"><label>面积(万m²)</label><span>'+(selProj.area||'-')+'</span></div>';
+                html += '<div class="form-group"><label>工程负责人</label><span>'+(selProj.负责人||'-')+'</span></div>';
+                if (selProj._importInfo) html += '<div class="form-group"><label>导入信息</label><span class="text-sm">'+selProj._importInfo+'</span></div>';
                 html += '</div>';
-
-                // 标段表格
                 html += '<h4 style="margin-top:16px;">📐 标段信息</h4>';
                 html += '<table><thead><tr><th>标段名称</th><th>面积(万m²)</th><th>状态</th><th>施工总承包</th><th>交付标准</th><th>交付户数</th><th>竣备时间</th><th>交付时间</th><th>合同交付时间</th><th>承查启动</th><th>开放日计划</th><th>联合评估计划</th><th>交付范围</th></tr></thead><tbody>';
-                (selProj.phases || []).forEach(ph => {
-                    html += '<tr>';
-                    html += `<td><strong>${ph.name}</strong></td>`;
-                    html += `<td>${ph.area||''}</td>`;
-                    html += `<td><span class="tag ${ph.status==='在建'?'tag-blue':ph.status==='竣备待交付'?'tag-yellow':ph.status==='停工'?'tag-red':ph.status==='集中交付期内'?'tag-teal':ph.status==='已移交物业'?'tag-green':'tag-gray'}">${ph.status}</span></td>`;
-                    html += `<td>${ph.contractor||''}</td>`;
-                    html += `<td>${ph.deliveryStandard||''}</td>`;
-                    html += `<td>${ph.deliveryUnits||''}</td>`;
-                    html += `<td>${formatDate(ph.completionTime)}</td>`;
-                    html += `<td>${formatDate(ph.deliveryTime)}</td>`;
-                    html += `<td>${formatDate(ph.contractDeliveryTime)}</td>`;
-                    html += `<td>${formatDate(ph.inspectionStartTime)}</td>`;
-                    html += `<td>${formatDate(ph.openDayPlanTime)}</td>`;
-                    html += `<td>${formatDate(ph.jointEvalPlanTime)}</td>`;
-                    html += `<td style="font-size:0.78em;">${ph.deliveryScope||''}</td>`;
-                    html += '</tr>';
+                (selProj.phases||[]).forEach(ph => {
+                    html += '<tr><td><strong>'+ph.name+'</strong></td><td>'+(ph.area||'')+'</td>';
+                    html += '<td><span class="tag '+(ph.status==='在建'?'tag-blue':ph.status==='竣备待交付'?'tag-yellow':ph.status==='停工'?'tag-red':ph.status==='集中交付期内'?'tag-teal':ph.status==='已移交物业'?'tag-green':'tag-gray')+'">'+ph.status+'</span></td>';
+                    html += '<td>'+(ph.contractor||'')+'</td><td>'+(ph.deliveryStandard||'')+'</td><td>'+(ph.deliveryUnits||'')+'</td>';
+                    html += '<td>'+formatDate(ph.completionTime)+'</td><td>'+formatDate(ph.deliveryTime)+'</td><td>'+formatDate(ph.contractDeliveryTime)+'</td>';
+                    html += '<td>'+formatDate(ph.inspectionStartTime)+'</td><td>'+formatDate(ph.openDayPlanTime)+'</td><td>'+formatDate(ph.jointEvalPlanTime)+'</td>';
+                    html += '<td style="font-size:0.78em;">'+(ph.deliveryScope||'')+'</td></tr>';
                 });
-                html += '</tbody></table>';
-                html += '</div>';
+                html += '</tbody></table></div>';
             } else {
                 html += '<div class="card" style="text-align:center;padding:60px;color:#bbb;"><p style="font-size:3em;">📋</p><p>请在左侧导航栏选择项目</p></div>';
             }
@@ -1508,6 +1496,13 @@
 
         function selectProjectsProject(pid) {
             window._projectsSelectedPid = pid;
+            window._projectsSelectedCompany = null;
+            renderProjectsContent();
+        }
+
+        function selectProjectsCompany(c) {
+            window._projectsSelectedCompany = c;
+            window._projectsSelectedPid = null;
             renderProjectsContent();
         }
 
@@ -2650,15 +2645,15 @@
                 if (cProjs.length === 0) return;
                 const hasActive = cProjs.some(p => p.id === window._trackingSelectedPid);
                 html += '<div class="sidebar-company">';
-                html += `<div class="sidebar-company-header" onclick="toggleSidebarCompany(this)">`;
-                html += `<span>🏢 ${c} <span style="font-size:0.8em;color:#999;">(${cProjs.length})</span></span>`;
+                html += `<div class="sidebar-company-header" style="cursor:pointer;" onclick="selectProjectsCompany('${c}')">`;
+                html += `<span class="arrow${hasActive || isCompanyActive ? ' open' : ''}" onclick="event.stopPropagation();toggleSidebarCompany(this.parentElement)" style="cursor:pointer;">▶</span>`;
                 html += `<span class="arrow${hasActive ? ' open' : ''}">▶</span>`;
                 html += '</div>';
                 html += `<div class="sidebar-company-projects${hasActive ? ' open' : ''}">`;
                 cProjs.forEach(p => {
                     const isActive = p.id === window._trackingSelectedPid;
                     html += `<div class="sidebar-project${isActive ? ' active' : ''}" onclick="selectTrackingProject('${p.id}')">`;
-                    html += `<span>${p.name}</span>`;
+                    html += `<span>${p.name}</span><span class="badge">${p.type}</span>`;
                     html += '</div>';
                 });
                 html += '</div></div>';
@@ -2779,7 +2774,7 @@
                 html += `<div class="sidebar-company-projects${isExpanded?' open':''}">`;
                 cProjs.forEach(p => {
                     const isActive = !isCompanyActive && p.id === window._summarySelectedPid;
-                    html += `<div class="sidebar-project${isActive?' active':''}" onclick="selectSummaryProject('${p.id}',null)">${p.name}</div>`;
+                    html += `<div class="sidebar-project${isActive?' active':''}" onclick="selectSummaryProject('${p.id}',null)">${p.name} <span class="badge">${p.type}</span></div>`;
                 });
                 html += '</div></div>';
             });
@@ -2820,7 +2815,7 @@
             const companyColors = { '北方': '#e74c3c', '雄安': '#f39c12', '华中': '#2ecc71', '华东': '#3498db', '贵州': '#9b59b6', '西南': '#1abc9c', '南沙': '#e67e22', '创新': '#34495e' };
             const phaseAcceptance = []; // { label, company, perHousehold, remaining, status }
             const allPhaseScores = [];   // { label, company, score }
-            const allPhaseProgress = []; // { label, company, overall, slowest }
+            const allPhaseProgress = []; // { label, company, overall, slowest, indoor, public, facade, outdoor, basement }
 
             filterProjects.forEach(p => {
                 (p.phases || []).forEach(ph => {
@@ -2848,7 +2843,9 @@
                                 slowest = sv.length > 0 ? parseFloat((sv.reduce((a,b) => a+b, 0) / sv.length).toFixed(1)) : 0;
                             }
                         }
-                        allPhaseProgress.push({ label, company: p.company, overall, slowest });
+                        const fbProg = fb?.progress || {};
+                        allPhaseProgress.push({ label, company: p.company, overall, slowest,
+                            indoor: parseFloat(fbProg.indoor)||0, public: parseFloat(fbProg.public)||0, facade: parseFloat(fbProg.facade)||0, outdoor: parseFloat(fbProg.outdoor)||0, basement: parseFloat(fbProg.basement)||0 });
                     }
 
                     // 仅显示该交付年份的标段
@@ -3030,14 +3027,14 @@
                 data: {
                     labels: filtered.map(p => p.label),
                     datasets: [
-                        { label: '总体进度', data: filtered.map(p => p.overall), backgroundColor: '#3498db' },
-                        { label: '最慢进度', data: filtered.map(p => p.slowest), backgroundColor: '#e74c3c' }
+                        { label: '总体进度', data: filtered.map(p => p.overall), backgroundColor: '#1a1a1a' }
                     ]
                 },
                 options: { responsive: true, maintainAspectRatio: false, plugins: { tooltip: { callbacks: { label: function(ctx2) {
                                 const p = filtered[ctx2.dataIndex];
-                                const val = ctx2.dataset.label === '总体进度' ? p.overall : p.slowest;
-                                return p.company + ' | ' + p.label + ' | ' + ctx2.dataset.label + ': ' + val + '%';
+                                return [p.company+' | '+p.label+' | 总体: '+p.overall+'%',
+                                    '  室内:'+p.indoor+'%  公区:'+p.public+'%  外立面:'+p.facade+'%',
+                                    '  室外:'+p.outdoor+'%  地下室:'+p.basement+'%'];
                             } } } }, scales: { x: { ticks: { maxRotation: 0, font: { size: 9 }, callback: function(val) {
                                 const label = this.getLabelForValue(val);
                                 const maxLen = 12;
@@ -3142,7 +3139,7 @@
                 cProjs.forEach(p => {
                     const isActive = !isCompanyActive && p.id === window._annualSelectedPid;
                     html += `<div class="sidebar-project${isActive ? ' active' : ''}" onclick="selectAnnualProject('${p.id}',null)">`;
-                    html += `<span>${p.name}</span>`;
+                    html += `<span>${p.name}</span><span class="badge">${p.type}</span>`;
                     html += '</div>';
                 });
                 html += '</div></div>';
@@ -3759,6 +3756,106 @@
             return null;
         }
 
+        // 将 base64 附件迁移到 IndexedDB，返回迁移数量
+        async function moveAttachmentsToIDB(projects) {
+            let count = 0;
+            const pending = [];
+            for (const p of projects) {
+                for (const ph of (p.phases || [])) {
+                    // 质量检查文件（sj.json 格式）
+                    for (const qc of (ph.qualityChecks || [])) {
+                        for (const f of (qc.files || [])) {
+                            if (f && f.data && f.data.length > 100) {
+                                const id = 'imp_' + Date.now() + '_' + (count++);
+                                pending.push(FILE_DB.put(id, { name: f.name || '附件', data: f.data, size: f.size || 0 }));
+                                f.data = ''; f.id = id;
+                            }
+                        }
+                    }
+                    // 月度反馈附件
+                    for (const ym of Object.keys(ph.monthlyFeedbacks || {})) {
+                        const fb = ph.monthlyFeedbacks[ym];
+                        const tfc = fb.threeFourCheck;
+                        if (tfc) {
+                            for (const r of (tfc.inspectionRounds || [])) {
+                                for (let i = 0; i < (r.files || []).length; i++) {
+                                    const f = r.files[i];
+                                    if (typeof f === 'string' && f.length > 500) {
+                                        const id = 'imp_' + Date.now() + '_' + (count++);
+                                        pending.push(FILE_DB.put(id, { name: '附件', data: f, size: 0 }));
+                                        r.files[i] = { name: '附件', id: id };
+                                    }
+                                }
+                            }
+                            for (const r of (tfc.inspectionRoundsData || [])) {
+                                for (let i = 0; i < (r.files || []).length; i++) {
+                                    const f = r.files[i];
+                                    if (typeof f === 'string' && f.length > 500) {
+                                        const id = 'imp_' + Date.now() + '_' + (count++);
+                                        pending.push(FILE_DB.put(id, { name: '附件', data: f, size: 0 }));
+                                        r.files[i] = { name: '附件', id: id };
+                                    }
+                                }
+                            }
+                            for (const k of ['jointEval', 'openDay']) {
+                                for (const fk of ['photos', 'files']) {
+                                    const arr = tfc[k]?.[fk];
+                                    if (arr && arr.length > 0) {
+                                        for (let i = 0; i < arr.length; i++) {
+                                            const f = arr[i];
+                                            if (typeof f === 'string' && f.length > 500) {
+                                                const id = 'imp_' + Date.now() + '_' + (count++);
+                                                pending.push(FILE_DB.put(id, { name: '附件', data: f, size: 0 }));
+                                                arr[i] = { name: '附件', id: id };
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        const two = fb.twoOne;
+                        if (two) {
+                            if (Array.isArray(two.files1)) {
+                                for (let i = 0; i < two.files1.length; i++) {
+                                    const f = two.files1[i];
+                                    if (typeof f === 'string' && f.length > 500) {
+                                        const id = 'imp_' + Date.now() + '_' + (count++);
+                                        pending.push(FILE_DB.put(id, { name: '附件', data: f, size: 0 }));
+                                        two.files1[i] = { name: '附件', id: id };
+                                    }
+                                }
+                            }
+                            for (const k of ['leakInspection3', 'leakInspection6']) {
+                                for (let i = 0; i < (two[k]?.files || []).length; i++) {
+                                    const f = two[k].files[i];
+                                    if (f.data && f.data.length > 100) {
+                                        const id = 'imp_' + Date.now() + '_' + (count++);
+                                        pending.push(FILE_DB.put(id, { name: f.name || '附件', data: f.data, size: f.size || 0 }));
+                                        two[k].files[i] = { name: f.name, id: id };
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    // 顶层开放日/联合评估照片
+                    for (const k of ['openDay', 'jointAssessment']) {
+                        const arr = ph[k]?.photos;
+                        if (arr && arr.length > 0) {
+                            for (let i = 0; i < arr.length; i++) {
+                                if (typeof arr[i] === 'string' && arr[i].length > 500) {
+                                    const id = 'imp_' + Date.now() + '_' + (count++);
+                                    pending.push(FILE_DB.put(id, { name: '附件', data: arr[i], size: 0 }));
+                                    arr[i] = { name: '附件', id: id };
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            await Promise.all(pending);
+            return count;
+        }
+
         function importAll(event) {
             const file = event.target.files[0];
             if (!file) return;
@@ -3769,23 +3866,23 @@
                     // 自动检测并转换 sj.json 格式
                     const imported = convertSJFormatToInternal(raw);
                     if (!Array.isArray(imported)) throw new Error('无法识别的数据格式，请确认JSON文件结构正确');
+                    // 将附件迁移到 IndexedDB（保留文件，不占 localStorage）
                     const importInfo = `导入:${file.name} ${getNowShort()}`;
-                    // 覆盖已有项目，但不删除导入文件中没有的项目
                     const existingIds = new Set(_projects.map(p => p.id));
-                    imported.forEach(ip => {
-                        ip._importInfo = importInfo;
-                        const idx = _projects.findIndex(p => p.id === ip.id);
-                        if (idx >= 0) {
-                            _projects[idx] = ip;
-                            existingIds.delete(ip.id);
-                        } else {
-                            _projects.push(ip);
-                        }
+                    moveAttachmentsToIDB(imported).then(function(count) {
+                        if (count > 0) console.log('已迁移 ' + count + ' 个附件到本地存储');
+                        imported.forEach(ip => {
+                            ip._importInfo = importInfo;
+                            const idx = _projects.findIndex(p => p.id === ip.id);
+                            if (idx >= 0) { _projects[idx] = ip; existingIds.delete(ip.id); }
+                            else { _projects.push(ip); }
+                        });
+                        saveData(_projects);
+                        renderCurrentTab();
+                        showToast('📤 数据已导入' + (count > 0 ? '（迁移' + count + '个附件）' : ''));
+                    }).catch(function(err) {
+                        showToast('❌ 附件迁移失败：' + err.message + '，请清理后重试');
                     });
-                    // existingIds中剩余的是导入文件中没有的，保留不删除
-                    saveData(_projects);
-                    renderCurrentTab();
-                    showToast('📤 数据已导入（覆盖已有，保留未包含项目）');
                 } catch (err) {
                     showToast('❌ 导入失败：' + err.message);
                     console.error('导入错误:', err);
