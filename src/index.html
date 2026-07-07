@@ -488,11 +488,11 @@
             position: absolute;
             top: 3px;
             right: 3px;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.55);
             color: #fff;
-            font-size: 13px;
-            width: 22px;
-            height: 22px;
+            font-size: 15px;
+            width: 30px;
+            height: 30px;
             border-radius: 6px;
             border: none;
             cursor: pointer;
@@ -1096,6 +1096,25 @@
         .card-remediation-extra .ref-photo-thumb:active {
             border-color: var(--primary);
             transform: scale(0.95);
+        }
+        .card-remediation-extra .btn-toggle-ref-photo {
+            display: inline-block;
+            padding: 4px 10px;
+            font-size: 12px;
+            color: #1a5fdc;
+            background: #e8f0fe;
+            border: 1px dashed #1a5fdc;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 2px 0;
+            transition: all 0.15s;
+        }
+        .card-remediation-extra .btn-toggle-ref-photo:hover {
+            background: #d0e2ff;
+        }
+        .card-remediation-extra .btn-toggle-ref-photo:active {
+            background: #b8d4ff;
+            transform: scale(0.96);
         }
         .card-remediation-extra .btn-ref-remove {
             font-size: 9px;
@@ -2098,7 +2117,7 @@
         @media (min-width: 768px) {
             .content-area {
                 padding: 10px 18px;
-                max-width: 680px;
+                max-width: 1200px;
             }
             .problem-card {
                 padding: 14px 16px;
@@ -2414,6 +2433,55 @@
             width: 100%;
             padding: 0 8px;
             line-height: 1.5;
+        }
+        /* ========== 问题清单缩放工具栏 ========== */
+        .zoom-toolbar {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 4px 8px;
+            margin-bottom: 4px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #e0e3e8;
+            font-size: 12px;
+            color: #666;
+            user-select: none;
+        }
+        .zoom-toolbar.visible {
+            display: flex;
+        }
+        .zoom-toolbar .zoom-label {
+            font-weight: 500;
+            color: #888;
+        }
+        .zoom-toolbar .zoom-value {
+            font-weight: 700;
+            color: #1a5276;
+            min-width: 45px;
+            text-align: center;
+        }
+        .zoom-toolbar button {
+            border: 1px solid #c8cdd4;
+            background: #fff;
+            border-radius: 4px;
+            padding: 2px 8px;
+            font-size: 12px;
+            cursor: pointer;
+            color: #555;
+            transition: all 0.15s;
+        }
+        .zoom-toolbar button:hover {
+            background: #e9ecef;
+        }
+        .zoom-toolbar button:active {
+            background: #d5dbe0;
+            transform: scale(0.95);
+        }
+        .zoom-toolbar .zoom-hint {
+            font-size: 10px;
+            color: #aaa;
         }
         /* ========== 拖入照片预览区样式 ========== */
         .drop-preview-area {
@@ -3202,6 +3270,16 @@
             <p class="hint">点击下方按钮添加问题或批量上传照片</p>
         </div>
 
+        <!-- 缩放工具栏 -->
+        <div class="zoom-toolbar" id="zoomToolbar">
+            <span class="zoom-label">🔍 显示比例</span>
+            <button id="btnZoomOut" title="缩小 (Ctrl+滚轮)">−</button>
+            <span class="zoom-value" id="zoomValue">100%</span>
+            <button id="btnZoomIn" title="放大 (Ctrl+滚轮)">+</button>
+            <button id="btnZoomReset" title="重置">↺</button>
+            <span class="zoom-hint">Ctrl+滚轮</span>
+        </div>
+
         <div id="problemList"></div>
         <!-- 实测实量弹窗 -->
         <div class="modal-overlay center" id="modalMeasurement" style="display:none;">
@@ -3398,7 +3476,7 @@
             <div class="modal-handle"></div>
             <div class="modal-title">💾 文件管理</div>
             <div style="margin-bottom:10px;">
-                <button class="btn btn-primary btn-sm" id="btnExportTempFile" style="width:100%;margin-bottom:8px;">📤 导出.json文档（系统下载文件夹）</button>
+                <button class="btn btn-primary btn-sm" id="btnExportTempFile" style="width:100%;margin-bottom:8px;">📤 导出.json文档（可选择保存位置）</button>
                 <button class="btn btn-report btn-sm" id="btnExportPdf" style="width:100%;margin-bottom:8px;background:#e65100;">🖨️ 导出PDF报告（系统下载文件夹）</button>
                 <input type="file" id="tempFileInput" accept=".json" multiple style="display:none;">
                 <button class="btn btn-outline btn-sm" id="btnImportTempFile" style="width:100%;margin-bottom:8px;">📥 导入.json文档（可合并多文档）</button>
@@ -3608,7 +3686,7 @@
             const REMEDIATION_KEY = 'quality_inspection_remediation_v5';
             const MEASUREMENT_KEY = 'quality_inspection_measurement_v5';
             const REPORT_SETTINGS_KEY = 'quality_inspection_report_settings_v1';
-            const MAX_IMG_WIDTH = 800;
+            const MAX_IMG_WIDTH = 1200;
             const MAX_LOGO_WIDTH = 400;
 
             // ==================== 状态 ====================
@@ -3648,6 +3726,7 @@ let reportSettings = {
             let batchFiles = [];
             let currentFilter = 'all';
             let nextId = 1;
+            let zoomLevel = 1.0; // 问题清单缩放比例 (0.5 ~ 2.0)
 
             // ==================== 涂鸦编辑器状态 ====================
             let doodleState = {
@@ -3731,9 +3810,31 @@ let reportSettings = {
                 });
             }
 
-            // 通用文件保存函数：优先原生，降级到Blob下载
+            // 通用文件保存函数：优先文件选择器 → 原生保存 → Blob下载
             async function universalSaveFile(fileName, content, mimeType) {
-                // 方案1：Android原生桥接保存
+                // 方案1：File System Access API（支持自定义选择文件夹，Chrome/Edge/Opera桌面端）
+                if (typeof window.showSaveFilePicker === 'function') {
+                    try {
+                        const handle = await window.showSaveFilePicker({
+                            suggestedName: fileName,
+                            types: [{
+                                description: mimeType === 'application/json' ? 'JSON文件' : '文件',
+                                accept: { [mimeType]: ['.' + fileName.split('.').pop()] }
+                            }]
+                        });
+                        const writable = await handle.createWritable();
+                        await writable.write(content);
+                        await writable.close();
+                        return { success: true, method: 'filepicker', fileName: fileName };
+                    } catch (e) {
+                        if (e.name === 'AbortError') {
+                            throw new Error('用户取消了保存');
+                        }
+                        console.warn('File System API失败，降级:', e);
+                    }
+                }
+
+                // 方案2：Android原生桥接保存
                 if (isAndroidWebView && hasNativeFileSave()) {
                     try {
                         // 将字符串转为Base64
@@ -3758,7 +3859,7 @@ let reportSettings = {
                     }
                 }
 
-                // 方案2：Blob + URL下载（标准浏览器方式）
+                // 方案3：Blob + URL下载（标准浏览器降级方式）
                 try {
                     const blob = new Blob([content], { type: mimeType });
                     const url = URL.createObjectURL(blob);
@@ -3960,6 +4061,13 @@ let reportSettings = {
             const $drawSelectionModalContent = document.getElementById('drawSelectionModalContent');
             const $btnCloseDrawSelection = document.getElementById('btnCloseDrawSelection');
             const $btnExportDrawData = document.getElementById('btnExportDrawData');
+
+            // 缩放工具栏
+            const $zoomToolbar = document.getElementById('zoomToolbar');
+            const $zoomValue = document.getElementById('zoomValue');
+            const $btnZoomIn = document.getElementById('btnZoomIn');
+            const $btnZoomOut = document.getElementById('btnZoomOut');
+            const $btnZoomReset = document.getElementById('btnZoomReset');
 
             // ==================== 初始化 ====================
             function init() {
@@ -4899,7 +5007,7 @@ function compressImage(file) {
                 ctx.drawImage(img, 0, 0, w, h);
 
                 resolve({
-                    base64: canvas.toDataURL('image/jpeg', 0.75),
+                    base64: canvas.toDataURL('image/jpeg', 0.85),
                     fileName: file.name,
                     width: canvas.width,
                     height: canvas.height
@@ -4960,15 +5068,35 @@ async function autoRotateIfPortrait(base64) {
                     $emptyState.querySelector('.empty-icon').textContent = '📝';
                     $emptyState.querySelector('p').textContent = '暂无检查问题记录';
                     $emptyState.querySelector('.hint').textContent = '点击下方按钮添加问题或批量上传照片';
+                    $zoomToolbar.classList.remove('visible');
                 } else if (filtered.length === 0 && currentFilter !== 'all') {
                     $emptyState.style.display = 'block';
                     $emptyState.querySelector('.empty-icon').textContent = '🔍';
                     $emptyState.querySelector('p').textContent = '该类别下暂无问题';
                     $emptyState.querySelector('.hint').textContent = '请切换类别筛选或添加新问题';
+                    $zoomToolbar.classList.remove('visible');
                 } else {
                     $emptyState.style.display = 'none';
                     renderProblemCards(filtered);
+                    $zoomToolbar.classList.add('visible');
+                    applyZoom();
                 }
+            }
+
+            // ==================== 缩放功能 ====================
+            function applyZoom() {
+                $problemList.style.zoom = zoomLevel;
+            }
+
+            function setZoom(level) {
+                zoomLevel = Math.min(2.0, Math.max(0.5, level));
+                zoomLevel = Math.round(zoomLevel * 100) / 100; // 保留两位小数
+                $zoomValue.textContent = Math.round(zoomLevel * 100) + '%';
+                applyZoom();
+            }
+
+            function resetZoom() {
+                setZoom(1.0);
             }
 
             function renderProblemCards(filteredProblems) {
@@ -4999,22 +5127,33 @@ async function autoRotateIfPortrait(base64) {
                             <option value="绿化" ${subCat === '绿化' ? 'selected' : ''}>🌿绿化</option>
                         </select>` :
                         '';
-                    const showRemediationExtra = starLevel === '3' || starLevel === '5';
+                    const showRemediationSuggestion = starLevel === '3' || starLevel === '5';
                     const hasRefPhoto = p.referencePhotoBase64 && p.referencePhotoBase64.length > 100;
 					const refPhotoAction = hasRefPhoto ? 'doodle-ref-photo' : 'upload-ref-photo';
 const refPhotoTitle = hasRefPhoto ? '点击编辑/旋转参考照片' : '点击上传参考照片';
                     const photoAreaClass = hasPhoto ? 'has-photo-loaded' : '';
-                    const remediationExtraHTML = showRemediationExtra ? `
-                    <div class="card-remediation-extra">
+                    // 整改建议区域（仅三星/五星显示）
+                    const remediationSuggestionHTML = showRemediationSuggestion ? `
                         <div class="extra-label">🔧 整改建议（${starLevel === '5' ? '特别关注' : '一般关注'}）：</div>
-                        <textarea class="remediation-input" data-id="${p.id}" data-field="remediationSuggestion" placeholder="请输入针对此问题的整改建议...">${p.remediationSuggestion || ''}</textarea>
+                        <textarea class="remediation-input" data-id="${p.id}" data-field="remediationSuggestion" placeholder="请输入针对此问题的整改建议...">${p.remediationSuggestion || ''}</textarea>` : '';
+                    // 参考照片区域（星级问题始终显示，非星级可切换）
+                    const refPhotoExpanded = showRemediationSuggestion || hasRefPhoto || (p.showRefPhoto === true);
+                    const refPhotoToggleHTML = !refPhotoExpanded ? `
+                        <button class="btn-toggle-ref-photo" data-id="${p.id}" data-action="toggle-ref-photo" title="点击添加参考照片">📷 添加参考照片</button>` : '';
+                    const referencePhotoHTML = refPhotoExpanded ? `
                         <div class="extra-label">📷 参考照片（正确做法示例）：</div>
                         <div class="ref-photo-row">
-<div class="ref-photo-thumb" data-id="${p.id}" data-action="${refPhotoAction}" title="${refPhotoTitle}">
+	<div class="ref-photo-thumb" data-id="${p.id}" data-action="${refPhotoAction}" title="${refPhotoTitle}">
                                 ${hasRefPhoto ? `<img src="${p.referencePhotoBase64}" alt="参考照片" loading="lazy">` : '📷'}
                             </div>
                             ${hasRefPhoto ? `<button class="btn-ref-remove" data-id="${p.id}" data-action="remove-ref-photo" title="移除参考照片">✕ 移除</button>` : ''}
-                        </div>
+                        </div>` : '';
+                    // 合并额外区域（参考照片始终显示，整改建议仅星级问题显示）
+                    const extraHTML = (remediationSuggestionHTML || referencePhotoHTML || refPhotoToggleHTML) ? `
+                    <div class="card-remediation-extra">
+                        ${remediationSuggestionHTML}
+                        ${referencePhotoHTML}
+                        ${refPhotoToggleHTML}
                     </div>` : '';
 // ===== 整改回复区 HTML（仅回复模式显示）=====
 const hasReplyPhoto = p.replyPhotoBase64 && p.replyPhotoBase64.length > 100;
@@ -5063,7 +5202,7 @@ const replyExtraHTML = reportSettings.replyMode ? `
                                 <textarea data-id="${p.id}" data-field="description" placeholder="请输入问题描述..." rows="3">${p.description || ''}</textarea>
                                                             </div>
                         </div>
-                        ${remediationExtraHTML}
+                        ${extraHTML}
 						${replyExtraHTML}
                     </div>`;
                 }).join('');
@@ -5454,6 +5593,20 @@ $problemList.querySelectorAll('[data-action="doodle-reply-photo"]').forEach(area
         }
     });
 });
+                // 参考照片切换按钮
+                $problemList.querySelectorAll('[data-action="toggle-ref-photo"]').forEach(btn => {
+                    btn.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        e.preventDefault();
+                        const id = parseInt(this.dataset.id);
+                        const problem = problems.find(p => p.id === id);
+                        if (problem) {
+                            problem.showRefPhoto = true;
+                            saveToStorage();
+                            renderAll();
+                        }
+                    });
+                });
                 $problemList.querySelectorAll('[data-action="remove-ref-photo"]').forEach(btn => {
                     btn.addEventListener('click', function(e) {
                         e.stopPropagation();
@@ -5929,7 +6082,7 @@ function triggerReplyPhotoUpload(problemId) {
                         const newProblem = { id: nextId++, category: category, subCategory: CATEGORIES_WITH_SUBCAT
                                 .includes(category) ? '土建' : '', description: '', photoBase64: result.base64,
                             fileName: result.fileName, starLevel: '', remediationSuggestion: '',
-                            referencePhotoBase64: '', createdAt: Date.now() + i };
+                            referencePhotoBase64: '', showRefPhoto: false, createdAt: Date.now() + i };
                         problems.push(newProblem);
                     }
                     saveToStorage();
@@ -5950,7 +6103,7 @@ function triggerReplyPhotoUpload(problemId) {
             $btnAddProblem.addEventListener('click', () => {
                 const newProblem = { id: nextId++, category: '室内', subCategory: '土建', description: '',
                     photoBase64: '', fileName: '', starLevel: '', remediationSuggestion: '', referencePhotoBase64: '',
-                    createdAt: Date.now() };
+                    showRefPhoto: false, createdAt: Date.now() };
                 problems.push(newProblem);
                 saveToStorage();
                 renderAll();
@@ -7322,6 +7475,7 @@ $btnRefreshSort.addEventListener('click', async () => {
                                     starLevel: p2.starLevel || '',
                                     remediationSuggestion: p2.remediationSuggestion || '',
                                     referencePhotoBase64: p2.referencePhotoBase64 || '',
+                                    showRefPhoto: p2.showRefPhoto !== undefined ? p2.showRefPhoto : (p2.starLevel === '3' || p2.starLevel === '5'),
                                     subCategory: p2.subCategory || (CATEGORIES_WITH_SUBCAT.includes(p2.category) ? '土建' : '')
                                 }));
                                 problems = problems.concat(newProblems);
@@ -7374,6 +7528,7 @@ $btnRefreshSort.addEventListener('click', async () => {
                                 starLevel: p.starLevel || '',
                                 remediationSuggestion: p.remediationSuggestion || '',
                                 referencePhotoBase64: p.referencePhotoBase64 || '',
+                                showRefPhoto: p.showRefPhoto !== undefined ? p.showRefPhoto : (p.starLevel === '3' || p.starLevel === '5'),
                                 subCategory: p.subCategory || (CATEGORIES_WITH_SUBCAT.includes(p.category) ? '土建' : '')
                             }));
                             
@@ -7581,6 +7736,8 @@ $btnRefreshSort.addEventListener('click', async () => {
                                     `<img src="${p.photoBase64}" alt="问题照片" style="max-width:100%;height:auto;">` :
                                     '<span style="color:#ccc;">（无照片）</span>';
                                 const starPrefix = getStarSymbol(p.starLevel);
+                                const hasRefPhoto = p.referencePhotoBase64 && p.referencePhotoBase64.length > 100;
+                                const refPhotoCell = hasRefPhoto ? `<div style="margin-top:4px;border-top:1px dashed #e0e0e0;padding-top:3px;"><span style="font-size:9px;color:#888;">📷参考照片</span><br><img src="${p.referencePhotoBase64}" alt="参考照片" style="max-width:100%;height:auto;min-width:60px;"></div>` : '';
                                 const descRaw = p.description || '（待补充描述）';
                                 const desc = starPrefix ? `${starPrefix} ${descRaw}` :
                                     descRaw;
@@ -7593,6 +7750,7 @@ if (reportSettings.replyMode) {
         <td class="col-photo-desc">
             <div class="photo-cell">${photoCell}</div>
             <div class="problem-desc-text">${escapeHTML(desc)}</div>
+            ${refPhotoCell}
         </td>
         <td class="col-reply">
             ${replyCellContent}
@@ -7607,6 +7765,7 @@ if (reportSettings.replyMode) {
         <td class="col-desc">
             <div class="problem-desc-text">${escapeHTML(desc)}</div>
             ${replyCellContent}
+            ${refPhotoCell}
         </td>
     </tr>`;
 }
@@ -7623,6 +7782,8 @@ if (reportSettings.replyMode) {
                                 '<span style="color:#ccc;">（无照片）</span>';
                             const starPrefix = getStarSymbol(p.starLevel);
                             const descRaw = p.description || '（待补充描述）';
+                            const hasRefPhoto = p.referencePhotoBase64 && p.referencePhotoBase64.length > 100;
+                            const refPhotoCell = hasRefPhoto ? `<div style="margin-top:4px;border-top:1px dashed #e0e0e0;padding-top:3px;"><span style="font-size:9px;color:#888;">📷参考照片</span><br><img src="${p.referencePhotoBase64}" alt="参考照片" style="max-width:100%;height:auto;min-width:60px;"></div>` : '';
                             const desc = starPrefix ? `${starPrefix} ${descRaw}` : descRaw;
 const replyCellContent = reportSettings.replyMode ? buildReplyCell(p) : '';
 if (reportSettings.replyMode) {
@@ -7633,6 +7794,7 @@ if (reportSettings.replyMode) {
         <td class="col-photo-desc">
             <div class="photo-cell">${photoCell}</div>
             <div class="problem-desc-text">${escapeHTML(desc)}</div>
+            ${refPhotoCell}
         </td>
         <td class="col-reply">
             ${replyCellContent}
@@ -7647,6 +7809,7 @@ if (reportSettings.replyMode) {
         <td class="col-desc">
             <div class="problem-desc-text">${escapeHTML(desc)}</div>
             ${replyCellContent}
+            ${refPhotoCell}
         </td>
     </tr>`;
 }
@@ -8122,6 +8285,7 @@ if (reqLabel) {
                                         const newProblems = data.problems.map(p2 => ({ ...p2, id: nextId++,
                                             starLevel: p2.starLevel || '', remediationSuggestion: p2.remediationSuggestion || '',
                                             referencePhotoBase64: p2.referencePhotoBase64 || '',
+                                            showRefPhoto: p2.showRefPhoto !== undefined ? p2.showRefPhoto : (p2.starLevel === '3' || p2.starLevel === '5'),
                                             subCategory: p2.subCategory || (CATEGORIES_WITH_SUBCAT.includes(p2.category) ? '土建' : '')
                                         }));
                                         problems = problems.concat(newProblems);
@@ -8157,6 +8321,7 @@ if (reqLabel) {
                                         const newProblems = data.problems.map(p2 => ({ ...p2, id: nextId++,
                                             starLevel: p2.starLevel || '', remediationSuggestion: p2.remediationSuggestion || '',
                                             referencePhotoBase64: p2.referencePhotoBase64 || '',
+                                            showRefPhoto: p2.showRefPhoto !== undefined ? p2.showRefPhoto : (p2.starLevel === '3' || p2.starLevel === '5'),
                                             subCategory: p2.subCategory || (CATEGORIES_WITH_SUBCAT.includes(p2.category) ? '土建' : '')
                                         }));
                                         problems = problems.concat(newProblems);
@@ -8187,6 +8352,22 @@ if (reqLabel) {
                         showToast('⚠️ 未识别到支持的图片或JSON文件');
                     }
                 });
+
+                // 缩放功能事件
+                $btnZoomIn.addEventListener('click', () => setZoom(zoomLevel + 0.05));
+                $btnZoomOut.addEventListener('click', () => setZoom(zoomLevel - 0.05));
+                $btnZoomReset.addEventListener('click', resetZoom);
+
+                // Ctrl+滚轮缩放
+                $contentArea.addEventListener('wheel', function(e) {
+                    if (!e.ctrlKey) return;
+                    e.preventDefault();
+                    if (e.deltaY < 0) {
+                        setZoom(zoomLevel + 0.05);
+                    } else {
+                        setZoom(zoomLevel - 0.05);
+                    }
+                }, { passive: false });
             }
             // ==================== 为所有模态窗口添加返回按钮 ====================
             function addModalCloseButtons() {
@@ -8396,6 +8577,7 @@ function bindSignatureClickInPreview() {
                     problem.starLevel = problem.starLevel || '';
                     problem.remediationSuggestion = problem.remediationSuggestion || '';
                     problem.referencePhotoBase64 = problem.referencePhotoBase64 || '';
+                    problem.showRefPhoto = problem.showRefPhoto !== undefined ? problem.showRefPhoto : (problem.starLevel === '3' || problem.starLevel === '5');
                     problem.subCategory = problem.subCategory || (CATEGORIES_WITH_SUBCAT.includes(problem
                         .category) ? '土建' : '');
                     problems.push(problem);
